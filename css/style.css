@@ -329,12 +329,22 @@ h1, h2, h3, h4 {
   align-items: start;
 }
 
-.about__photo img {
+.about__photo {
   width: 240px;
   height: 240px;
-  object-fit: cover;
   border-radius: 12px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.about__photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 55% 30%;
+  transform: scale(1.8);
+  transform-origin: 55% 30%;
 }
 
 .about__text p {
@@ -694,7 +704,7 @@ h1, h2, h3, h4 {
     justify-content: center;
   }
 
-  .about__photo img {
+  .about__photo {
     width: 180px;
     height: 180px;
   }
