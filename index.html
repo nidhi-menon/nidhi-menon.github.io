@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Nidhi Menon — Data Scientist</title>
-  <meta name="description" content="Nidhi Menon — Data Scientist, Machine Learning enthusiast, Georgia Tech alumna.">
+  <title>Nidhi Menon — Machine Learning Engineer</title>
+  <meta name="description" content="Nidhi Menon — Machine Learning Engineer specializing in Search, Recommendations, and NLP. 6+ years shipping production ML systems at scale.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" href="favicon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,50 +25,44 @@
         <li><a href="#about">About</a></li>
         <li><a href="#experience">Experience</a></li>
         <li><a href="#skills">Skills</a></li>
-        <li><a href="#publications">Publications</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#contact">Get In Touch</a></li>
       </ul>
     </div>
   </nav>
 
   <!-- Hero -->
-  <section class="hero" id="hero">
+  <section class="hero hero--particles" id="hero">
+    <canvas id="hero-particles-canvas"></canvas>
     <div class="hero__content">
       <h1 class="hero__title">Hi, I'm <span class="accent">Nidhi Menon</span></h1>
-      <p class="hero__subtitle">Data Scientist</p>
-      <p class="hero__taglines">Potterhead &middot; Artist &middot; Data Scientist</p>
+      <p class="hero__subtitle"><span id="typed-role"></span><span class="typed-cursor">|</span></p>
+      <p class="hero__tagline">From prototype to production, I build ML systems that scale &mdash; and lead the teams that ship them.</p>
+      <p class="hero__status"><span class="hero__status-dot"></span>Open to ML Engineer roles in San Francisco Bay Area</p>
       <div class="hero__social">
-        <a href="https://www.linkedin.com/in/nidhinmenon" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <a href="https://www.linkedin.com/in/menon-nidhi/" target="_blank" rel="noopener" aria-label="LinkedIn">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
         </a>
         <a href="https://github.com/nidhi-menon" target="_blank" rel="noopener" aria-label="GitHub">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
         </a>
-        <a href="https://www.instagram.com/_nidhi_menon" target="_blank" rel="noopener" aria-label="Instagram">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
-        </a>
       </div>
-      <a href="#experience" class="hero__cta">View My Work</a>
+      <a href="#contact" class="hero__cta">Get In Touch</a>
     </div>
   </section>
 
   <!-- About -->
   <section class="section" id="about">
     <div class="container">
-      <h2 class="section__title fade-in">About Me</h2>
+      <h2 class="section__title fade-in">About</h2>
       <div class="about__grid fade-in">
         <div class="about__photo">
           <img src="images/NM_profilepic.jpg" alt="Nidhi Menon" loading="lazy">
         </div>
         <div class="about__text">
-          <p>I am a self-motivated Machine Learning enthusiast with a passion for <strong>Data Science</strong> and <strong>Computer Vision</strong>. I aim to enhance my skill sets, share learnings, and make meaningful contributions to the domain of Machine Learning.</p>
-          <p>As a Data Scientist with a software engineering background, I uncover insights and develop data-driven solutions for the Forge community at <strong>Autodesk</strong>. I graduated from the M.S. in Computer Science program at <strong>Georgia Institute of Technology</strong> in December 2018, specializing in Machine Learning. I completed my B.E. in Computer Engineering from the University of Mumbai in 2017, and a certificate course in Global Management Practices and Leadership Strategies from Saint Mary's College of California.</p>
-          <p>Outside of work, I'm an avid reader, enthusiastic writer, and trained dancer. I enjoy painting (acrylic and watercolor) and craftwork in my leisure time.</p>
-          <div class="about__contact">
-            <p><strong>Email:</strong> p.nidhimenon@gmail.com</p>
-            <p><strong>Phone:</strong> (415) 574-0535</p>
-          </div>
-          <a href="public/NidhiMenon-Resume.pdf" class="btn" target="_blank" rel="noopener">Download Resume</a>
+          <p>I'm a Machine Learning Engineer with 6+ years of experience building and shipping production ML systems at scale. At <strong>Autodesk</strong>, I led cross-functional teams delivering AI-powered experiences to millions of users. My work includes a personalized recommendation system serving 708K daily active users and a GenAI and NLP-powered customer support insights platform that reduced support ticket volume by 10.7%.</p>
+          <p>I thrive at the intersection of technical execution, strategic thinking, and people leadership — owning roadmap and architecture decisions while partnering closely with product, design, and infrastructure leadership. I've architected end-to-end ML systems using Wide &amp; Deep Networks, BERT, and RAG pipelines, while mentoring engineers and championing privacy-first AI development. I hold an M.S. in Computer Science (Machine Learning) from <strong>Georgia Tech</strong> and completed <strong>Stanford's</strong> NLP with Deep Learning program.</p>
+          <p>Outside of work, I'm an avid reader (and lifelong Harry Potter fan), a trained Bharatanatyam artist who performs at venues across the San Francisco Bay Area, and a creative tinkerer who loves turning everyday materials into something new. I’m currently pursuing a dance degree in Kathak. I’m also committed to expanding access to technology — I led the Girls Who Code program at Autodesk for two years and helped organize the TechWomen initiative.</p>
+          <a href="public/Resume - Nidhi Menon.pdf" class="btn" target="_blank" rel="noopener">Download Resume</a>
         </div>
       </div>
     </div>
@@ -82,57 +76,182 @@
       <h3 class="timeline__category fade-in">Work Experience</h3>
       <div class="timeline">
 
-        <div class="timeline__item fade-in">
-          <div class="timeline__marker"></div>
-          <div class="timeline__content">
-            <h4>Data Scientist</h4>
-            <p class="timeline__meta">Autodesk Inc., San Francisco, CA &middot; Jan 2019 &ndash; Present</p>
-            <p>Enabling Autodesk's Forge engineering community to understand and drive the scope of data available by interpreting data via tools and methods from statistics and machine learning to detect and forecast potential failures, determine successful patterns, and improve productivity for squads.</p>
+        <div class="timeline__group fade-in">
+          <div class="timeline__group-header">
+            <h4 class="timeline__group-company">Autodesk</h4>
+            <p class="timeline__group-meta">San Francisco, CA &middot; 6 yrs 4 mos</p>
+          </div>
+          <div class="timeline__group-roles">
+
+            <div class="timeline__item">
+              <div class="timeline__marker"></div>
+              <div class="timeline__content">
+                <h4>Principal Machine Learning Engineer</h4>
+                <p class="timeline__meta">May 2022 &ndash; Apr 2025</p>
+                <ul class="timeline__list">
+                  <li>Led 12-person cross-functional team through 0-to-1 architecture, development, and production launch of a personalized recommendation system for Autodesk App Store, driving 13% lift in app downloads across ~708K DAU with &lt;100ms latency
+                    <ul>
+                      <li>Owned end-to-end system architecture for real-time ML inference at scale using Wide &amp; Deep Networks with online feature serving, achieving &lt;50ms p95 inference latency</li>
+                      <li>Built feature store and data migration pipeline, reducing model training time by 40% and infrastructure costs by 25%</li>
+                      <li>Mentored an intern in building functional prototype, guiding algorithm selection and system design decisions</li>
+                    </ul>
+                  </li>
+                  <li>Led 0-to-1 design and implementation of ML-powered customer support insights platform, proactively surfacing product issues and enabling natural-language querying across 10,000+ quarterly tickets
+                    <ul>
+                      <li>Piloted BERT-based topic modeling framework in partnership with Autodesk Platform Services, surfacing 7 critical product issues leading to targeted fixes that reduced quarterly support volume by 10.7%</li>
+                      <li>Evolved system from topic-based categorization to a RAG architecture, leveraging vector embeddings, FAISS, and cross-encoder re-ranking to surface contextually relevant insights beyond predefined topics</li>
+                      <li>Designed a modular, extensible platform with configurable data connectors, enabling 3 additional product teams to adopt automated ticket analysis with minimal engineering overhead</li>
+                    </ul>
+                  </li>
+                  <li>Served as organizational Privacy Champion, conducting privacy impact assessments across ML initiatives, enforcing data retention and ethics standards, training teams on privacy best practices, and partnering with legal on open-source compliance</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="timeline__item">
+              <div class="timeline__marker"></div>
+              <div class="timeline__content">
+                <h4>Senior Machine Learning Engineer</h4>
+                <p class="timeline__meta">Jan 2019 &ndash; Apr 2022</p>
+                <ul class="timeline__list">
+                  <li>Engineered high-performance data compression framework reducing API logs (~1.4GB/hr) by 99.8%, enabling scalable pipelines for:
+                    <ul>
+                      <li>Anomaly detection to reduce API usage abuse and obtain granular customer behavior insights</li>
+                      <li>Driving strategic decisions on API monetization, product subscriptions, and customer retention</li>
+                    </ul>
+                  </li>
+                  <li>Contributed machine learning expertise to two pro bono projects for Autodesk Foundation, supporting initiatives for Hope Street Group and Yuno Technologies with predictive modeling and analytics</li>
+                  <li>Championed Data-as-a-Service (DaaS) adoption across engineering teams, increasing Blameless Postmortem completion from 20% to 75%, fostering incident learning with self-service analytics</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="timeline__item">
+              <div class="timeline__marker"></div>
+              <div class="timeline__content">
+                <h4>Data Science Intern</h4>
+                <p class="timeline__meta">May &ndash; Aug 2018</p>
+                <ul class="timeline__list">
+                  <li>Developed XGBoost models to forecast team velocity and sprint burn rates, enabling proactive agile coaching interventions, resulting in a 12.3% increase in organizational burn rate</li>
+                  <li>Built an interactive visualization tool to analyze GitHub data, integrating APIs for real-time tracking of employee contributions to Autodesk's open-source projects, fostering developer community engagement</li>
+                </ul>
+              </div>
+            </div>
+
           </div>
         </div>
 
-        <div class="timeline__item fade-in">
-          <div class="timeline__marker"></div>
-          <div class="timeline__content">
-            <h4>Graduate Teaching Assistant</h4>
-            <p class="timeline__meta">Georgia Tech, Atlanta, GA (Advisor: Dr. Devi Parikh) &middot; Aug &ndash; Dec 2018</p>
-            <p>Teaching Assistant for CS 4476: Introduction to Computer Vision (165 students). Coordinated with the teaching team, graded assignments and projects in MATLAB/Python, and held office hours.</p>
+        <div class="timeline__group fade-in">
+          <div class="timeline__group-header">
+            <h4 class="timeline__group-company">Georgia Institute of Technology</h4>
+            <p class="timeline__group-meta">Atlanta, GA</p>
+          </div>
+          <div class="timeline__group-roles">
+
+            <div class="timeline__item">
+              <div class="timeline__marker"></div>
+              <div class="timeline__content">
+                <h4>Graduate Teaching Assistant</h4>
+                <p class="timeline__meta">Aug &ndash; Dec 2018</p>
+                <ul class="timeline__list">
+                  <li>TA for CS 4476: Introduction to Computer Vision (165 students) under Dr. Devi Parikh</li>
+                  <li>Coordinated with the teaching team, graded assignments and projects in MATLAB/Python, and held office hours</li>
+                </ul>
+              </div>
+            </div>
+
           </div>
         </div>
 
-        <div class="timeline__item fade-in">
-          <div class="timeline__marker"></div>
-          <div class="timeline__content">
-            <h4>Data Science &amp; Machine Learning Intern</h4>
-            <p class="timeline__meta">Autodesk Inc., San Francisco, CA &middot; May &ndash; Aug 2018</p>
-            <p>Deployed a framework and dashboard providing key descriptive statistics for the global Agile Practice team across 84 products. Trained neural networks to predict team velocities for ~1,000 teams, maximizing organizational profits by at least 5%.</p>
+        <div class="timeline__group fade-in">
+          <div class="timeline__group-header">
+            <h4 class="timeline__group-company">SmartTurtles Inc.</h4>
+            <p class="timeline__group-meta">Mumbai, India</p>
+          </div>
+          <div class="timeline__group-roles">
+
+            <div class="timeline__item">
+              <div class="timeline__marker"></div>
+              <div class="timeline__content">
+                <h4>Software Intern</h4>
+                <p class="timeline__meta">Aug 2015 &ndash; Feb 2017</p>
+                <ul class="timeline__list">
+                  <li>Built web applications for clients using agile methodology, focusing on client-side programming</li>
+                  <li>Performed manual testing to ensure applications met customer needs before deployment</li>
+                </ul>
+              </div>
+            </div>
+
           </div>
         </div>
 
-        <div class="timeline__item fade-in">
-          <div class="timeline__marker"></div>
-          <div class="timeline__content">
-            <h4>Graduate Research Student</h4>
-            <p class="timeline__meta">Georgia Tech, Atlanta, GA (Advisor: Dr. Dobromir Rahnev) &middot; Jan &ndash; Dec 2018</p>
-            <p>Research at the Perception, Neuroimaging, and Modeling Lab. Engaged neural network models (VGG-16, VGG-19, ResNet50, InceptionResNetV2) in computer vision tasks of object identification and classification for hybrid images. Conducted comparative analysis on visual perception of humans and machines.</p>
+        <div class="timeline__group fade-in">
+          <div class="timeline__group-header">
+            <h4 class="timeline__group-company">LTI (L&amp;T Infotech)</h4>
+            <p class="timeline__group-meta">Chennai, India</p>
+          </div>
+          <div class="timeline__group-roles">
+
+            <div class="timeline__item">
+              <div class="timeline__marker"></div>
+              <div class="timeline__content">
+                <h4>Project Trainee</h4>
+                <p class="timeline__meta">Jun &ndash; Jul 2015</p>
+                <ul class="timeline__list">
+                  <li>Designed a secure browser-based portal (Epic Essentials) for the Strasz Exam Management Suite, enabling certification and testing organizations to deliver better tests more efficiently</li>
+                </ul>
+              </div>
+            </div>
+
           </div>
         </div>
 
-        <div class="timeline__item fade-in">
-          <div class="timeline__marker"></div>
-          <div class="timeline__content">
-            <h4>Software Intern</h4>
-            <p class="timeline__meta">Smartturtles Software Labs Pvt. Ltd., Mumbai, India &middot; Aug 2015 &ndash; Feb 2017</p>
-            <p>Built web applications for clients using agile methodology, focusing on client-side programming. Performed manual testing to ensure applications met customer needs before deployment.</p>
+      </div>
+
+      <h3 class="timeline__category fade-in">Research Experience</h3>
+      <div class="timeline">
+
+        <div class="timeline__group fade-in">
+          <div class="timeline__group-header">
+            <h4 class="timeline__group-company">Georgia Institute of Technology</h4>
+            <p class="timeline__group-meta">Atlanta, GA &middot; Jan &ndash; Dec 2018</p>
+          </div>
+          <div class="timeline__group-roles">
+
+            <div class="timeline__item">
+              <div class="timeline__marker"></div>
+              <div class="timeline__content">
+                <h4>Graduate Student Researcher</h4>
+                <p class="timeline__meta">Advisor: Dr. Dobromir Rahnev</p>
+                <ul class="timeline__list">
+                  <li>Optimized and performed comparative study of deep CNN architectures (VGG-16/19, ResNet50, InceptionResNetV2) for hybrid image classification, achieving 94% accuracy through systematic hyperparameter tuning</li>
+                  <li>Conducted comparative analysis of model predictions to draw parallels between neural network features and human cognitive processes, contributing to interdisciplinary research in AI and neuroscience</li>
+                </ul>
+              </div>
+            </div>
+
           </div>
         </div>
 
-        <div class="timeline__item fade-in">
-          <div class="timeline__marker"></div>
-          <div class="timeline__content">
-            <h4>Project Trainee</h4>
-            <p class="timeline__meta">LTI (L&amp;T Infotech), Chennai, India &middot; June &ndash; July 2015</p>
-            <p>Designed a secure browser-based portal (Epic Essentials) for the Strasz Exam Management Suite, enabling certification and testing organizations to deliver better tests more efficiently.</p>
+        <div class="timeline__group fade-in">
+          <div class="timeline__group-header">
+            <h4 class="timeline__group-company">University of Mumbai</h4>
+            <p class="timeline__group-meta">Mumbai, India &middot; Jul 2016 &ndash; May 2017</p>
+          </div>
+          <div class="timeline__group-roles">
+
+            <div class="timeline__item">
+              <div class="timeline__marker"></div>
+              <div class="timeline__content">
+                <h4>Undergraduate Researcher</h4>
+                <p class="timeline__meta">Advisor: Prof. Varunakshi Bhojane</p>
+                <ul class="timeline__list">
+                  <li>Publication: <a href="https://www.ijirset.com/upload/2017/april/188_Floor.pdf" target="_blank" rel="noopener"><strong>Floor Layout Planning using Artificial Intelligence Technique</strong></a> &middot; IJIRSET, Vol. 6, Issue 4, April 2017</li>
+                  <li>Prototyped Genetic Algorithm software for furniture placement optimization, achieving 90% accuracy in space utilization by processing 20,000 positional chromosome configurations across 5 generations</li>
+                </ul>
+              </div>
+            </div>
+
           </div>
         </div>
 
@@ -144,18 +263,24 @@
         <div class="timeline__item fade-in">
           <div class="timeline__marker"></div>
           <div class="timeline__content">
-            <h4>Georgia Institute of Technology</h4>
-            <p class="timeline__meta">M.S. in Computer Science (Machine Learning) &middot; Aug 2017 &ndash; Dec 2018</p>
-            <p>Specialized in Machine Learning. Worked as a Graduate Research Student under Dr. Dobromir Rahnev and served as a Graduate Teaching Assistant for Computer Vision under Dr. Devi Parikh. Active volunteer with GaTech's Asha for Education chapter and member of the India Club at Georgia Tech.</p>
+            <h4>Stanford University</h4>
+            <p class="timeline__meta">AI Professional Program &mdash; NLP with Deep Learning &middot; May &ndash; Aug 2022</p>
           </div>
         </div>
 
         <div class="timeline__item fade-in">
           <div class="timeline__marker"></div>
           <div class="timeline__content">
-            <h4>Mumbai University (Pillai College of Engineering)</h4>
+            <h4>Georgia Institute of Technology</h4>
+            <p class="timeline__meta">M.S. in Computer Science (Machine Learning) &middot; Aug 2017 &ndash; Dec 2018</p>
+          </div>
+        </div>
+
+        <div class="timeline__item fade-in">
+          <div class="timeline__marker"></div>
+          <div class="timeline__content">
+            <h4>University of Mumbai (Pillai College of Engineering)</h4>
             <p class="timeline__meta">B.E. in Computer Engineering &middot; Aug 2013 &ndash; May 2017</p>
-            <p>Represented the institute at TCS Codevita pre-finals and ACM-ICPC regional finals. Ranked 5th at the national Smart India Hackathon 2017. Participated in an international student exchange program at Saint Mary's College of California. Won the Outstanding Undergraduate Student Award.</p>
           </div>
         </div>
 
@@ -172,56 +297,42 @@
           <h3>Languages</h3>
           <div class="skills__chips">
             <span class="chip">Python</span>
-            <span class="chip">SQL</span>
-            <span class="chip">GraphQL</span>
             <span class="chip">Java</span>
-            <span class="chip">MATLAB</span>
             <span class="chip">C</span>
+            <span class="chip">MATLAB</span>
             <span class="chip">R</span>
-            <span class="chip">D3.js</span>
-            <span class="chip">Chart.js</span>
-            <span class="chip">React.js</span>
           </div>
         </div>
         <div class="skills__group">
-          <h3>Tools &amp; Frameworks</h3>
+          <h3>Frameworks</h3>
           <div class="skills__chips">
-            <span class="chip">TensorFlow</span>
+            <span class="chip">Flask</span>
             <span class="chip">PyTorch</span>
-            <span class="chip">AWS</span>
-            <span class="chip">Azure</span>
-            <span class="chip">Tableau</span>
-            <span class="chip">Power BI</span>
-            <span class="chip">PostgreSQL</span>
-            <span class="chip">Microsoft SQL Server</span>
-            <span class="chip">WEKA</span>
-            <span class="chip">Shiny</span>
-            <span class="chip">Hadoop</span>
+            <span class="chip">TensorFlow</span>
           </div>
         </div>
         <div class="skills__group">
-          <h3>Platforms</h3>
+          <h3>Data</h3>
           <div class="skills__chips">
-            <span class="chip">macOS</span>
-            <span class="chip">Linux</span>
-            <span class="chip">Windows</span>
-            <span class="chip">Cloudera</span>
+            <span class="chip">SQL</span>
+            <span class="chip">DBT</span>
+            <span class="chip">Snowflake</span>
+            <span class="chip">DynamoDB</span>
+            <span class="chip">Redshift</span>
+            <span class="chip">Hadoop</span>
+            <span class="chip">Hive</span>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Publications -->
-  <section class="section section--alt" id="publications">
-    <div class="container">
-      <h2 class="section__title fade-in">Publications</h2>
-      <div class="publications fade-in">
-        <div class="pub-card">
-          <h3>Floor Layout Planning Using Artificial Intelligence</h3>
-          <p class="pub-card__meta">Vol. 6, Issue 4 &middot; International Journal of Innovative Research in Science, Engineering and Technology (IJIRSET) &middot; April 2017</p>
-          <p>Using Genetic Algorithm to generate optimal furniture arrangements in a master bedroom by evolving chromosome representations through crossover and fitness evaluation.</p>
-          <a href="https://www.ijirset.com/upload/2017/april/188_Floor.pdf" class="pub-card__link" target="_blank" rel="noopener">View Paper (PDF)</a>
+        <div class="skills__group">
+          <h3>Tools</h3>
+          <div class="skills__chips">
+            <span class="chip">AWS</span>
+            <span class="chip">Airflow</span>
+            <span class="chip">Git</span>
+            <span class="chip">Docker</span>
+            <span class="chip">PowerBI</span>
+            <span class="chip">Looker</span>
+          </div>
         </div>
       </div>
     </div>
@@ -232,17 +343,14 @@
     <div class="container contact">
       <h2 class="section__title fade-in">Get In Touch</h2>
       <div class="contact__content fade-in">
-        <p>I'd love to hear from you! Whether it's about a project, collaboration, or just to say hi — feel free to reach out.</p>
-        <a href="mailto:p.nidhimenon@gmail.com" class="btn btn--large">Send Me an Email</a>
+        <p>After a rewarding career break to welcome my daughter, I'm energized and ready to drive impact with purpose-driven teams. I'm currently exploring Machine Learning Engineer opportunities &mdash; let's connect.</p>
+        <a href="mailto:menonnidhi96@gmail.com" class="btn btn--large">Send Me an Email</a>
         <div class="contact__social">
-          <a href="https://www.linkedin.com/in/nidhinmenon" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <a href="https://www.linkedin.com/in/menon-nidhi/" target="_blank" rel="noopener" aria-label="LinkedIn">
             <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
           </a>
           <a href="https://github.com/nidhi-menon" target="_blank" rel="noopener" aria-label="GitHub">
             <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
-          </a>
-          <a href="https://www.instagram.com/_nidhi_menon" target="_blank" rel="noopener" aria-label="Instagram">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
           </a>
         </div>
       </div>
@@ -255,14 +363,11 @@
       <div class="footer__inner">
         <p>&copy; 2024 Nidhi Menon. All rights reserved.</p>
         <div class="footer__social">
-          <a href="https://www.linkedin.com/in/nidhinmenon" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <a href="https://www.linkedin.com/in/menon-nidhi/" target="_blank" rel="noopener" aria-label="LinkedIn">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
           </a>
           <a href="https://github.com/nidhi-menon" target="_blank" rel="noopener" aria-label="GitHub">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
-          </a>
-          <a href="https://www.instagram.com/_nidhi_menon" target="_blank" rel="noopener" aria-label="Instagram">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
           </a>
         </div>
       </div>
@@ -270,5 +375,6 @@
   </footer>
 
   <script src="js/main.js"></script>
+  <script src="js/hero-bg.js"></script>
 </body>
 </html>
