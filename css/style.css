@@ -697,11 +697,7 @@ h1, h2, h3, h4 {
     grid-template-columns: 1fr;
     gap: 32px;
     text-align: center;
-  }
-
-  .about__photo {
-    display: flex;
-    justify-content: center;
+    justify-items: center;
   }
 
   .about__photo {
