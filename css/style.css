@@ -587,6 +587,95 @@ h1, h2, h3, h4 {
   font-size: 0.9rem;
 }
 
+/* ===== Project Cards ===== */
+.project-card {
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-left: 4px solid var(--color-accent);
+  border-radius: 12px;
+  padding: 36px;
+  margin-bottom: 24px;
+  transition: box-shadow var(--transition);
+}
+
+.project-card:hover {
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.07);
+}
+
+/* Status Badges */
+.project-badge {
+  display: inline-block;
+  padding: 3px 12px;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 16px;
+}
+
+.project-badge--in-progress {
+  background: #dbeafe;
+  color: #1d4ed8;
+}
+
+.project-badge--done {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.project-badge--planned {
+  background: #f3f4f6;
+  color: #6b7280;
+}
+
+.project-card__title {
+  font-size: 1.4rem;
+  margin-bottom: 6px;
+  letter-spacing: -0.02em;
+}
+
+.project-card__tagline {
+  font-size: 1rem;
+  color: var(--color-accent);
+  font-style: italic;
+  margin-bottom: 16px;
+}
+
+.project-card__desc {
+  font-size: 0.95rem;
+  color: var(--color-text-light);
+  margin-bottom: 20px;
+  line-height: 1.7;
+}
+
+.project-card__highlights {
+  margin: 0 0 24px 0;
+  padding: 0;
+  list-style: none;
+}
+
+.project-card__highlights li {
+  position: relative;
+  padding-left: 20px;
+  font-size: 0.95rem;
+  color: var(--color-text);
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+.project-card__highlights li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: var(--color-accent);
+  font-weight: 600;
+}
+
+.project-card__chips {
+  margin-bottom: 28px;
+}
+
 /* ===== Contact ===== */
 .contact {
   text-align: center;
