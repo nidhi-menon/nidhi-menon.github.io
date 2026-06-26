@@ -892,6 +892,22 @@ h1, h2, h3, h4 {
   opacity: 0.8;
 }
 
+.gs-projects-link {
+  margin-top: 32px;
+  font-size: 0.9rem;
+  color: var(--color-text-light);
+  text-align: right;
+}
+
+.gs-section-label {
+  font-size: 1rem;
+  color: var(--color-text-light);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
 .gs-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
