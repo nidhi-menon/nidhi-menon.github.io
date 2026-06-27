@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Hybrid Image Classification — Nidhi Menon</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="../favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css?v=4">
+</head>
+<body>
+
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="/" class="nav__logo">Nidhi Menon</a>
+      <button class="nav__toggle" id="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="../about.html">About</a></li>
+        <li><a href="../experience.html">Experience</a></li>
+        <li><a href="../portfolio.html" class="active">Portfolio</a></li>
+        <li><a href="../github-stats.html">GitHub Stats</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main style="padding-top: var(--nav-height);">
+    <div class="project-detail">
+
+      <a href="../portfolio.html" class="project-detail__back">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
+        Back to Portfolio
+      </a>
+
+      <div class="project-detail__hero">
+        <img src="../images/projects/hybrid-imgs.png" alt="Hybrid Image Classification">
+      </div>
+
+      <div class="project-detail__badge">
+        <span class="project-badge project-badge--completed">Completed</span>
+      </div>
+      <h1 class="project-detail__title">Hybrid Image Classification</h1>
+      <p class="project-detail__tagline">Combining CNNs and transformers for robust image recognition</p>
+
+      <div class="project-detail__section">
+        <h2>About</h2>
+        <p>Georgia Tech graduate research exploring hybrid architectures that fuse convolutional feature extraction with transformer-based attention. The project investigated whether the local feature sensitivity of CNNs and the global context modeling of transformers could be combined to outperform either architecture alone.</p>
+      </div>
+
+      <div class="project-detail__section">
+        <h2>Details</h2>
+        <ul>
+          <li>Benchmarked on CIFAR-10, CIFAR-100, and ImageNet subsets</li>
+          <li>Evaluated accuracy vs. compute tradeoffs across multiple architecture variants</li>
+          <li>Explored early fusion, late fusion, and cross-attention integration strategies</li>
+        </ul>
+      </div>
+
+      <div class="project-detail__section">
+        <h2>Technologies</h2>
+        <div class="skills__chips">
+          <span class="chip">Python</span>
+          <span class="chip">PyTorch</span>
+          <span class="chip">Hugging Face</span>
+          <span class="chip">CIFAR-10</span>
+          <span class="chip">ImageNet</span>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <p>&copy; 2026 Nidhi Menon. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
