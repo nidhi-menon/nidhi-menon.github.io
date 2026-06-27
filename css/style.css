@@ -316,7 +316,7 @@ h1, h2, h3, h4 {
 
 /* ===== Sections ===== */
 .section {
-  padding: 96px 0;
+  padding: 56px 0;
 }
 
 .section--alt {
@@ -326,7 +326,7 @@ h1, h2, h3, h4 {
 .section__title {
   font-size: 2rem;
   text-align: center;
-  margin-bottom: 56px;
+  margin-bottom: 32px;
   letter-spacing: -0.02em;
 }
 
@@ -1086,7 +1086,7 @@ h1, h2, h3, h4 {
 /* ===== Portfolio Thumbnail Grid ===== */
 .pf-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 24px;
 }
 
@@ -1122,6 +1122,7 @@ h1, h2, h3, h4 {
 .pf-thumb:hover .pf-thumb__img-wrap img {
   transform: scale(1.04);
 }
+
 
 .pf-thumb__placeholder {
   width: 100%;
@@ -1271,9 +1272,16 @@ h1, h2, h3, h4 {
   margin-top: 8px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .pf-grid {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .pf-grid {
+    grid-template-columns: 1fr;
     gap: 16px;
   }
 
