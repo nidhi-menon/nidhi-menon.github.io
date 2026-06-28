@@ -1272,6 +1272,77 @@ h1, h2, h3, h4 {
   margin-top: 8px;
 }
 
+.writing-intro {
+  max-width: 900px;
+  margin: 0 auto;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: var(--text);
+  text-align: justify;
+}
+
+.writing-block {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.writing-block__desc {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: var(--text);
+  text-align: justify;
+}
+
+.writing-block__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.writing-block__subhead {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 12px;
+}
+
+.writing-block__divider {
+  border-top: 1px solid var(--border);
+  margin: 32px 0;
+}
+
+.writing-block__featured {
+  margin-top: 28px;
+}
+
+.writing-block__featured h3 {
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+  margin-bottom: 12px;
+}
+
+.writing-block__posts {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.writing-block__posts li a {
+  color: var(--accent);
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.writing-block__posts li a:hover {
+  text-decoration: underline;
+}
+
 .project-detail__coming-soon {
   color: var(--text-muted);
   font-style: italic;
