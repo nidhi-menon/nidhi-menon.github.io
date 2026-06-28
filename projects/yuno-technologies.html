@@ -43,28 +43,75 @@
         <span class="project-badge project-badge--completed">Completed</span>
       </div>
       <h1 class="project-detail__title">Yuno Technologies</h1>
-      <p class="project-detail__tagline">Autodesk Foundation — ML support for edtech startup</p>
+      <p class="project-detail__tagline">ML support for edtech startup via Autodesk Foundation pro bono consulting</p>
 
       <div class="project-detail__section">
-        <h2>About</h2>
-        <p>Pro bono ML consulting for Yuno Technologies, an edtech startup serving under-resourced schools. Contributed as part of Autodesk's Foundation pro bono consulting program, advising the team on building effective ML systems with limited labeled data and constrained compute environments.</p>
+        <h2>Story Behind the Project</h2>
+        <p>Yuno Technologies was a London-based edtech startup with a compelling mission: to unlock opportunities for people in places hard hit by globalization and automation, by helping them into careers with progression. Their vision was to become the LinkedIn for the linked-out — a blue-collar career development platform where workers can get information and inspiration on careers, and connect with employers.</p>
+        <p style="margin-top:12px">The specific problem we tackled for them — which they called <strong>Project Keystone</strong> — was matching incoming job postings to Standard Occupational Classification (SOC) codes based on a worker's psychometric profile, so that job recommendations could surface opportunities candidates had never previously considered. Traditional text-based job searching limits workers to what they already know; Yuno wanted to break through that ceiling.</p>
+        <p style="margin-top:12px">Through the Autodesk Foundation's pro bono consulting program, I was part of a four-person team that brought ML expertise to help Yuno evaluate and build their matching system.</p>
       </div>
 
       <div class="project-detail__section">
-        <h2>Details</h2>
+        <h2>About</h2>
+        <p>Pro bono ML consulting engagement to tackle Project Keystone — Yuno's initiative to develop a system that matches incoming job postings to SOC codes of interest by predicting their relationship to a worker's psychometric and interest profile. The team evaluated three approaches — topic modeling, XGBoost ensemble, and fine-tuned BERT — and produced a performance comparison to guide Yuno's technical direction.</p>
+      </div>
+
+      <div class="project-detail__section">
+        <h2>My Role</h2>
+        <p>I was one of four Autodesk pro bono consultants on the project, alongside Deborshi Goswami, Paulo Arantes, and Stella Xu. Together we researched, designed, implemented, and evaluated three distinct ML approaches for the job-to-SOC matching problem, and synthesized our findings into actionable recommendations for the Yuno team.</p>
+      </div>
+
+      <div class="project-detail__section">
+        <h2>Key Details</h2>
         <ul>
-          <li>Advised on model selection and evaluation strategy for a student engagement prediction system</li>
-          <li>Helped the team scope an MVP that could run with limited labeled data</li>
-          <li>Reviewed feature engineering approach and identified leakage risks in the initial design</li>
+          <li><strong>Topic Modeling</strong> — unsupervised pattern recognition requiring no ground truth labels; 74% accuracy on top-1 match, 90% on top-5</li>
+          <li><strong>XGBoost Ensemble</strong> — 5 XGBoost models trained on Bag of Words vectorization to classify SOC labels; 87.9% top-1 accuracy, 80.9% recall</li>
+          <li><strong>Fine-tuned BERT</strong> — pre-trained BERT model fine-tuned for multi-label SOC classification; 87.7% top-1 accuracy, 77.1% recall</li>
+          <li>XGBoost emerged as the strongest performer across accuracy and recall metrics</li>
         </ul>
+      </div>
+
+      <div class="project-detail__section">
+        <h2>Impact</h2>
+        <p>Delivered a comparative analysis of three ML approaches with concrete performance metrics, giving Yuno a clear evidence-based path forward for their job matching system. The work contributed toward Yuno's goal of helping workers in overlooked communities discover career opportunities beyond what traditional job search would surface.</p>
       </div>
 
       <div class="project-detail__section">
         <h2>Technologies</h2>
         <div class="skills__chips">
           <span class="chip">Python</span>
+          <span class="chip">BERT</span>
+          <span class="chip">XGBoost</span>
+          <span class="chip">Topic Modeling</span>
           <span class="chip">scikit-learn</span>
-          <span class="chip">ML Strategy</span>
+        </div>
+      </div>
+
+      <div class="project-detail__section">
+        <h2>Links</h2>
+        <div class="project-detail__links">
+          <a href="https://www.linkedin.com/company/yuno-technologies/about/" class="btn" target="_blank" rel="noopener">Yuno Technologies — LinkedIn</a>
+          <a href="https://web.archive.org/web/20220726065937/https://www.yuno.uk/" class="btn" target="_blank" rel="noopener">Yuno Website (archived)</a>
+        </div>
+        <p style="margin-top:12px;font-size:0.85rem;color:var(--text-muted)">Note: Yuno Technologies appears to have shut down — their website (yuno.uk) was last archived in March 2023 and is no longer active.</p>
+      </div>
+
+      <div class="project-detail__section">
+        <h2>Artifacts</h2>
+        <div class="artifact-accordion">
+          <div class="artifact-accordion__item">
+            <button class="artifact-accordion__trigger" aria-expanded="false">
+              Project Keystone — ML Approach Overview
+              <svg class="artifact-accordion__chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div class="artifact-accordion__body">
+              <figure>
+                <img src="../images/artifacts/yuno-technologies/Yuno_poster.png" alt="Project Keystone — Autodesk Pro Bono Consulting overview poster">
+                <figcaption>Overview of the three ML approaches evaluated for Project Keystone: Topic Modeling, XGBoost Ensemble, and fine-tuned BERT — with model architecture diagrams and performance comparison.</figcaption>
+              </figure>
+            </div>
+          </div>
         </div>
       </div>
 

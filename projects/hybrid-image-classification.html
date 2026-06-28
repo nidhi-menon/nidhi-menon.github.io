@@ -43,20 +43,46 @@
         <span class="project-badge project-badge--completed">Completed</span>
       </div>
       <h1 class="project-detail__title">Hybrid Image Classification</h1>
-      <p class="project-detail__tagline">Combining CNNs and transformers for robust image recognition</p>
+      <p class="project-detail__tagline">Facilitating interdisciplinary AI/neuroscience research in the task of hybrid image recognition</p>
 
       <div class="project-detail__section">
-        <h2>About</h2>
-        <p>Georgia Tech graduate research exploring hybrid architectures that fuse convolutional feature extraction with transformer-based attention. The project investigated whether the local feature sensitivity of CNNs and the global context modeling of transformers could be combined to outperform either architecture alone.</p>
+        <h2>Story Behind the Project</h2>
+        <p>As second-semester Masters students at Georgia Tech, my batchmate and I were looking for grad researcher opportunities to put our ML skills to work on something meaningful. We ended up in <strong>Dr. Dobromir Rahnev</strong>'s Computations of Subjective Perception Lab — a lab asking one of the most fascinating questions in cognitive science: <em>how does the brain construct what we see?</em></p>
+        <p style="margin-top:12px">Our work sat within the lab's research thread on deep neural networks and human vision — investigating the similarities and divergences between artificial neural networks and human visual perception, and using DNNs as a lens to better understand how the brain processes what it sees. We brought our ML expertise to that interdisciplinary space, designing and evaluating hybrid architectures that fused the local feature sensitivity of CNNs with the global context modeling of transformers.</p>
       </div>
 
       <div class="project-detail__section">
-        <h2>Details</h2>
+        <h2>About</h2>
+        <p>Deep neural networks have revolutionized computer vision, but they diverge from human vision in important ways — particularly in how they are trained and how they generalize. This project explored hybrid CNN-transformer architectures as a tool for both improving artificial vision systems and gaining insight into human visual cognition, contributing to the broader question of how biological and artificial visual systems relate to one another.</p>
+      </div>
+
+      <div class="project-detail__section">
+        <h2>My Role</h2>
+        <p>Graduate researcher in collaboration with a batchmate, working under Dr. Rahnev at Georgia Tech's Computations of Subjective Perception Lab. My contributions spanned the full research pipeline:</p>
         <ul>
-          <li>Benchmarked on CIFAR-10, CIFAR-100, and ImageNet subsets</li>
-          <li>Evaluated accuracy vs. compute tradeoffs across multiple architecture variants</li>
-          <li>Explored early fusion, late fusion, and cross-attention integration strategies</li>
+          <li>Literature review on hybrid image perception and deep neural network architectures</li>
+          <li>Constructed a dataset of 100 hybrid animal images — sourcing existing hybrid images and generating new ones where needed</li>
+          <li>Designed and deployed a human participant study via Google Forms, including participant recruitment</li>
+          <li>Synthesized and analyzed human response data from the study</li>
+          <li>Ran optimized deep CNN architectures (VGG-16/19, ResNet50, InceptionResNetV2) on the same hybrid animal identification tasks</li>
+          <li>Analyzed neural network responses and conducted a comparative study between human and model performance</li>
+          <li>Reported on findings from the comparative analysis</li>
         </ul>
+      </div>
+
+      <div class="project-detail__section">
+        <h2>Key Details</h2>
+        <ul>
+          <li>Custom dataset of 100 hybrid animal images used as the shared stimulus set for both human and model evaluation</li>
+          <li>Human responses collected via a structured survey; results synthesized and analyzed for patterns in hybrid animal perception</li>
+          <li>CNN architectures evaluated: VGG-16, VGG-19, ResNet50, InceptionResNetV2</li>
+          <li>Comparative analysis between human and neural network performance on the same identification tasks</li>
+        </ul>
+      </div>
+
+      <div class="project-detail__section">
+        <h2>Impact</h2>
+        <p>This work contributed empirical data and analysis to Dr. Rahnev's lab's ongoing investigation into the relationship between deep neural networks and human visual perception — one of the open questions at the intersection of AI and cognitive neuroscience. By running the same hybrid image identification tasks on both human participants and optimized CNN architectures, the study added to the body of evidence the lab uses to understand where artificial and biological vision systems converge and diverge.</p>
       </div>
 
       <div class="project-detail__section">
@@ -64,9 +90,26 @@
         <div class="skills__chips">
           <span class="chip">Python</span>
           <span class="chip">PyTorch</span>
-          <span class="chip">Hugging Face</span>
-          <span class="chip">CIFAR-10</span>
-          <span class="chip">ImageNet</span>
+          <span class="chip">VGG-16/19</span>
+          <span class="chip">ResNet50</span>
+          <span class="chip">InceptionResNetV2</span>
+        </div>
+      </div>
+
+      <div class="project-detail__section">
+        <h2>Links</h2>
+        <div class="project-detail__links">
+          <a href="https://rahnevlab.gatech.edu/topics.html" class="btn" target="_blank" rel="noopener">Rahnev Lab — Research Topics</a>
+          <a href="https://github.com/nidhi-menon/Graduate-Research-in-Computer-Vision-and-Deep-Learning" class="btn" target="_blank" rel="noopener">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="vertical-align:-3px;margin-right:8px"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>GitHub
+          </a>
+        </div>
+      </div>
+
+      <div class="project-detail__section">
+        <h2>Artifacts</h2>
+        <div class="project-detail__links">
+          <a href="https://rahnevlab.gatech.edu/documents/CVs/Rahnev_CV.pdf" class="btn" target="_blank" rel="noopener">Dr. Rahnev's CV — lists Nidhi Menon as mentored Masters student</a>
         </div>
       </div>
 

@@ -43,20 +43,43 @@
         <span class="project-badge project-badge--shipped">Shipped</span>
       </div>
       <h1 class="project-detail__title">App Store Recommendation System</h1>
-      <p class="project-detail__tagline">Autodesk App Store — personalized discovery at scale</p>
+      <p class="project-detail__tagline">Personalized app discovery at scale using Wide & Deep neural networks — Autodesk App Store</p>
 
       <div class="project-detail__section">
-        <h2>About</h2>
-        <p>Designed and shipped a recommendation system for the Autodesk App Store that surfaces relevant third-party integrations to CAD/BIM users. Combined collaborative filtering with content-based signals from user behavior and app metadata to improve discoverability across a catalog of 1,500+ apps. The system served 708K daily active users at peak.</p>
+        <h2>Story Behind the Project</h2>
+        <p>Autodesk develops industry-leading 3D design, engineering, and entertainment software across three core industries: Architecture, Engineering & Construction; Product Design & Manufacturing; and Media & Entertainment. The Autodesk App Store was the marketplace where users could "extend the power of Autodesk software" through apps and plug-ins built by internal and third-party developers — a catalog that had grown vastly over Autodesk's decades-long history.</p>
+        <p style="margin-top:12px">But the marketplace had a problem: no personalization. Marketing analytics showed a wide gap between users creating an account in the Autodesk ecosystem and actually downloading or purchasing their first app. The culprit was clear — the sheer volume of offerings made it easy to feel overwhelmed, especially for new users who didn't know where to start.</p>
+        <p style="margin-top:12px">This started as a hackathon week project. I built a proof of concept and pitched it to leadership, who saw the potential immediately and greenlit it as a full product initiative. I secured buy-in for resources, headcount, and budget — and went from hackathon prototype to leading a production launch.</p>
+        <p style="margin-top:12px">Before a single model was trained, we did the work to understand what users actually needed. In November 2023, I co-led two user research workshops at <strong>Autodesk University</strong> alongside <strong>Yaoli Mao</strong>, Principal Experience Researcher at Autodesk. Using an interactive card game format, we gathered direct user input and feedback on how a recommendation system should work for them. The post-workshop analysis became the foundation on which the recommendation system was designed and built.</p>
       </div>
 
       <div class="project-detail__section">
-        <h2>Details</h2>
+        <h2>About</h2>
+        <p>A personalized recommendation system for the Autodesk App Store, built from 0 to 1, that surfaces relevant third-party apps and integrations to users based on their behavior and context. The system uses a <a href="https://arxiv.org/pdf/1606.07792" target="_blank" rel="noopener">Wide & Deep neural network</a> architecture to balance memorization of known patterns with generalization to new users and apps, serving real-time recommendations at scale with sub-100ms latency.</p>
+      </div>
+
+      <div class="project-detail__section">
+        <h2>My Role</h2>
+        <p>I led this project end to end — from the original hackathon proof of concept and leadership pitch, through user research, architecture, development, and production launch. I assembled and led a 12-person cross-functional team, coordinated across multiple internal teams and stakeholders, and mentored a summer intern as part of v1. I co-led two user research workshops at Autodesk University with Yaoli Mao (Principal Experience Researcher, Autodesk), using an interactive card game format to gather user input that directly shaped the system design. My technical ownership spanned the full system: model architecture, real-time ML inference infrastructure, feature store design, and data migration pipeline.</p>
+      </div>
+
+      <div class="project-detail__section">
+        <h2>Key Details</h2>
         <ul>
-          <li>Led end-to-end design and delivery across modeling, infrastructure, and API integration</li>
-          <li>Combined collaborative filtering with content-based signals for cold-start handling</li>
-          <li>Built on Wide &amp; Deep architecture to balance memorization and generalization</li>
-          <li>Served real-time recommendations via low-latency API backed by DynamoDB</li>
+          <li>Wide & Deep neural network architecture with online feature serving for real-time inference</li>
+          <li>Combined collaborative filtering with content-based signals for cold-start handling across 5,000+ apps</li>
+          <li>Feature store and data migration pipeline built from scratch</li>
+          <li>Real-time recommendations served via low-latency API backed by DynamoDB</li>
+        </ul>
+      </div>
+
+      <div class="project-detail__section">
+        <h2>Impact</h2>
+        <ul>
+          <li><strong>13% lift in app downloads</strong> across ~708K daily active users</li>
+          <li><strong>&lt;100ms end-to-end latency</strong>; &lt;50ms p95 inference latency</li>
+          <li><strong>40% reduction in model training time</strong> via feature store and pipeline improvements</li>
+          <li><strong>25% reduction in infrastructure costs</strong> through data migration and architectural optimizations</li>
         </ul>
       </div>
 
@@ -64,10 +87,35 @@
         <h2>Technologies</h2>
         <div class="skills__chips">
           <span class="chip">Python</span>
-          <span class="chip">Collaborative Filtering</span>
-          <span class="chip">PySpark</span>
-          <span class="chip">AWS SageMaker</span>
-          <span class="chip">DynamoDB</span>
+          <span class="chip">TensorFlow</span>
+          <span class="chip">Wide & Deep Networks</span>
+          <span class="chip">AWS</span>
+          <span class="chip">Snowflake</span>
+        </div>
+      </div>
+
+      <div class="project-detail__section">
+        <h2>Links</h2>
+        <div class="project-detail__links">
+          <a href="https://apps.autodesk.com" class="btn" target="_blank" rel="noopener">Autodesk App Store</a>
+        </div>
+      </div>
+
+      <div class="project-detail__section">
+        <h2>Artifacts</h2>
+        <div class="artifact-accordion">
+          <div class="artifact-accordion__item">
+            <button class="artifact-accordion__trigger" aria-expanded="false">
+              User Research Workshop — Card Game Activity (Autodesk University, Nov 2023)
+              <svg class="artifact-accordion__chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div class="artifact-accordion__body">
+              <figure>
+                <img src="../images/artifacts/app-store-recommendation/workshop.png" alt="Card game used during Autodesk University user research workshops">
+                <figcaption>Participants arranged up to 8 cards across four categories — Recommendation Method, Data Collection & Privacy, Desired Qualities, and more — to define their ideal personalized recommendation engine.</figcaption>
+              </figure>
+            </div>
+          </div>
         </div>
       </div>
 

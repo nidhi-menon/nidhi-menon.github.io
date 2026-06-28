@@ -43,26 +43,46 @@
         <span class="project-badge project-badge--completed">Completed</span>
       </div>
       <h1 class="project-detail__title">PeraNoto</h1>
-      <p class="project-detail__tagline">Evolutionary optimization for architectural space planning</p>
+      <p class="project-detail__tagline">AI-driven evolutionary optimization for architectural space planning</p>
 
       <div class="project-detail__section">
-        <h2>About</h2>
-        <p>Published research applying genetic algorithms to the facility layout problem — optimizing multi-room floor plans under adjacency, area, and circulation constraints. The work demonstrated convergence behavior and evaluated fitness landscape properties across a range of building configurations.</p>
+        <h2>Story Behind the Project</h2>
+        <p>Every time my family moved houses, replaced furniture, or did a renovation, the same problem surfaced: given a specific floor layout, what is the optimal placement of furniture pieces, accounting for spatial constraints, common preferences, and efficient use of floor space? It was the kind of problem that seems intuitive but is genuinely hard to solve well — and I had seen people struggle with it repeatedly.</p>
+        <p style="margin-top:12px">When it came time to choose a research problem in undergrad, I wondered if this was something my team could tackle with AI. Our advisor, <strong>Prof. Varunakshi Bhojane</strong>, was immediately enthusiastic. What made it exciting — and daunting — was that at the time, this specific problem had not been approached with AI in any meaningful way. We didn't have a clear body of similar work to draw from. We surveyed adjacent problems, drew inspiration from parallel domains, and built a novel solution using genetic algorithms: a technique that evolves candidate solutions over successive generations, improving itself toward an optimal arrangement.</p>
       </div>
 
       <div class="project-detail__section">
-        <h2>Details</h2>
+        <h2>About</h2>
+        <p>PeraNoto is a system that uses Genetic Algorithm (GA) to generate optimized furniture layout designs for a master bedroom. The name itself comes from Javanese — <em>Perabot</em> (furniture) and <em>Noto</em> (arrangement) — a nod to the problem at its heart.</p>
+        <p style="margin-top:12px">The system takes user inputs (room dimensions, furniture pieces) and evolves candidate layouts over successive generations — encoding each arrangement as a chromosome, evaluating fitness after every operation, and applying crossover and mutation until an optimal layout is reached. It outputs up to four distinct layout options per run, giving users real choices rather than a single prescribed solution. If no valid layout can be generated, the system prompts the user to try again, keeping the experience interactive and user-friendly.</p>
+        <p style="margin-top:12px">The motivation was practical: buying furniture online without a visual sense of how it fits, or paying for interior design advice that may not even be good, are real pain points. PeraNoto was built to give users peace of mind and meaningful options — affordably and on demand.</p>
+      </div>
+
+      <div class="project-detail__section">
+        <h2>My Role</h2>
+        <p>I conceptualized the problem and pitched the idea to the team and our advisor. From there, we worked collaboratively under Prof. Bhojane's guidance to build the system end to end — from literature survey and problem formulation to chromosome representation, fitness function design, crossover and mutation logic, and the user input validation layer.</p>
+      </div>
+
+      <div class="project-detail__section">
+        <h2>Key Details</h2>
         <ul>
-          <li>Formulated floor plan arrangement as a combinatorial optimization problem with multi-constraint fitness function</li>
-          <li>Applied genetic operators (crossover, mutation, selection) tuned for spatial constraint satisfaction</li>
-          <li>Analyzed convergence behavior and fitness landscape topology across configuration families</li>
+          <li>Scope: master bedroom layout optimization with core furniture elements</li>
+          <li>Generates up to 4 distinct optimized layout options per run</li>
+          <li>Fitness function evaluates spatial constraints, adjacency preferences, and floor space utilization</li>
+          <li>Applies crossover and mutation on chromosome-encoded layouts to evolve toward optimal solutions</li>
+          <li>Input validation layer checks for errors and guides the user interactively</li>
         </ul>
+      </div>
+
+      <div class="project-detail__section">
+        <h2>Impact</h2>
+        <p>At the time of this research, applying AI to furniture layout optimization was largely unexplored territory — we had limited prior work to draw from and had to build on insights from adjacent problems. PeraNoto was a novel, published contribution to that space. The problem has since grown significantly in relevance as generative AI and spatial computing have matured, making this an early signal of a direction the field would later move toward.</p>
       </div>
 
       <div class="project-detail__section">
         <h2>Technologies</h2>
         <div class="skills__chips">
-          <span class="chip">Python</span>
+          <span class="chip">MATLAB</span>
           <span class="chip">Genetic Algorithms</span>
           <span class="chip">Optimization</span>
         </div>
@@ -71,8 +91,16 @@
       <div class="project-detail__section">
         <h2>Links</h2>
         <div class="project-detail__links">
-          <a href="https://arxiv.org/abs/2309.05861" class="btn btn--outline" target="_blank" rel="noopener">Read Paper (arXiv)</a>
+          <a href="https://www.ijirset.com/upload/2017/april/188_Floor.pdf" class="btn" target="_blank" rel="noopener">Read Paper (IJIRSET)</a>
+          <a href="https://github.com/nidhi-menon/PeraNoto-Undergrad-research-project" class="btn" target="_blank" rel="noopener">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="vertical-align:-3px;margin-right:8px"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>GitHub
+          </a>
         </div>
+      </div>
+
+      <div class="project-detail__section">
+        <h2>Artifacts</h2>
+        <p class="project-detail__coming-soon">Additional artifacts coming soon.</p>
       </div>
 
     </div>
