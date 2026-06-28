@@ -36,27 +36,49 @@
       </a>
 
       <div class="project-detail__hero">
-        <img src="../images/projects/csi.png" alt="Support Insights Platform">
+        <img src="../images/projects/csi.png" alt="GenAI-Powered Voice of Customer Analytics">
       </div>
 
       <div class="project-detail__badge">
         <span class="project-badge project-badge--shipped">Shipped</span>
       </div>
       <h1 class="project-detail__title">GenAI-Powered Voice of Customer Analytics</h1>
-      <p class="project-detail__tagline">Autodesk — BERTopic to RAG, evolving support intelligence at scale</p>
+      <p class="project-detail__tagline">BERTopic to RAG — evolving support intelligence at scale at Autodesk</p>
 
       <div class="project-detail__section">
-        <h2>About</h2>
-        <p>Built a platform to automatically classify, cluster, and route incoming support tickets across Autodesk product lines. Combined topic modeling with fine-tuned classifiers to surface trending issues and reduce mean time to resolution. The platform contributed to a 10.7% reduction in support ticket volume across 10+ product teams.</p>
+        <h2>Story Behind the Project</h2>
+        <p>It started with a casual conversation. During my time at Georgia Tech, I had worked on a system to route new StackOverflow posts to the right experts — getting questions answered quickly and correctly. When I mentioned this at Autodesk, it sparked a discussion: we should probably be looking at what people are posting on StackOverflow about Autodesk products.</p>
+        <p style="margin-top:12px">That thread led us to the Developer Advocacy and Support (DAS) team, which handles customer support for <a href="https://aps.autodesk.com" target="_blank" rel="noopener">Autodesk Platform Services</a>. When we sat down with them, we found that they were dealing with support tickets coming in from multiple sources — emails, forms, and anonymous public posts pulled from StackOverflow tagged with <code>#autodesk</code> — with no automated way to make sense of the volume.</p>
+        <p style="margin-top:12px">I ran an analytics deep-dive, built a POC for topic modeling, and pitched it to leadership. They saw the value immediately. What started as a single-team pilot eventually evolved into a modular platform, and then into a GenAI-powered system with RAG capabilities — a journey from BERTopic to retrieval-augmented generation over the life of the project.</p>
       </div>
 
       <div class="project-detail__section">
-        <h2>Details</h2>
+        <h2>About</h2>
+        <p>A ML-powered customer support insights platform that proactively surfaces product issues and enables natural-language querying across 10,000+ quarterly support tickets. The system ingests tickets from multiple sources, applies topic modeling to identify emerging issue clusters, and was later extended with a RAG architecture for contextually relevant, open-ended querying beyond predefined topics. Originally piloted with one team, it was redesigned as a modular platform adopted by multiple product teams.</p>
+      </div>
+
+      <div class="project-detail__section">
+        <h2>My Role</h2>
+        <p>I led the project 0 to 1 — from the original analytics exploration and topic modeling POC, through leadership pitch and buy-in, to design, implementation, and platform expansion. I partnered with the Autodesk Platform Services team throughout, and drove both the technical evolution of the system (BERTopic → RAG) and the organizational expansion from a single-team pilot to a multi-team platform.</p>
+      </div>
+
+      <div class="project-detail__section">
+        <h2>Key Details</h2>
         <ul>
-          <li>Fine-tuned BERT-based classifiers for multi-label ticket categorization across product domains</li>
-          <li>Applied topic modeling to surface emerging issue clusters before they became high-volume</li>
-          <li>Built a real-time routing layer to direct tickets to the right team without manual triage</li>
-          <li>Integrated with existing support tooling via FastAPI microservice</li>
+          <li>Piloted BERT-based topic modeling with the Autodesk Platform Services team; surfaced 7 critical product issues</li>
+          <li>Extended system with RAG architecture layered on vector embeddings, FAISS, and cross-encoder re-ranking for open-ended natural-language querying</li>
+          <li>Redesigned from a single-team POC into a modular platform with configurable data connectors</li>
+          <li>Enabled 3 additional product teams to adopt automated ticket analysis with minimal engineering overhead</li>
+        </ul>
+      </div>
+
+      <div class="project-detail__section">
+        <h2>Impact</h2>
+        <ul>
+          <li><strong>10.7% reduction in quarterly support ticket volume</strong> across 10+ product teams</li>
+          <li><strong>7 critical product issues surfaced</strong> proactively via topic modeling; targeted fixes drove the volume reduction</li>
+          <li><strong>3 additional product teams</strong> onboarded to automated ticket analysis via the modular platform redesign</li>
+          <li>Natural-language querying across <strong>10,000+ quarterly tickets</strong> via RAG</li>
         </ul>
       </div>
 
@@ -64,10 +86,40 @@
         <h2>Technologies</h2>
         <div class="skills__chips">
           <span class="chip">Python</span>
-          <span class="chip">BERT</span>
-          <span class="chip">Topic Modeling</span>
-          <span class="chip">FastAPI</span>
-          <span class="chip">Elasticsearch</span>
+          <span class="chip">BERTopic</span>
+          <span class="chip">RAG</span>
+          <span class="chip">LLM</span>
+          <span class="chip">FAISS</span>
+          <span class="chip">Airflow</span>
+          <span class="chip">DBT</span>
+          <span class="chip">Looker</span>
+          <span class="chip">AWS</span>
+          <span class="chip">Snowflake</span>
+        </div>
+      </div>
+
+      <div class="project-detail__section">
+        <h2>Links</h2>
+        <div class="project-detail__links">
+          <a href="https://aps.autodesk.com" class="btn" target="_blank" rel="noopener">Autodesk Platform Services</a>
+        </div>
+      </div>
+
+      <div class="project-detail__section">
+        <h2>Artifacts</h2>
+        <div class="artifact-accordion">
+          <div class="artifact-accordion__item">
+            <button class="artifact-accordion__trigger" aria-expanded="false">
+              Inspiration: StackOverflow Data Analytics (Georgia Tech)
+              <svg class="artifact-accordion__chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div class="artifact-accordion__body">
+              <p>The Georgia Tech project that sparked this work — a system to route new StackOverflow posts to the right experts for fast, accurate answers. Mentioning this in conversation at Autodesk is what led to the question: <em>should we be looking at what people post about Autodesk products?</em></p>
+              <a href="https://github.com/nidhi-menon/StackOverflow-Data-Analytics" class="btn" target="_blank" rel="noopener" style="margin-top:12px;display:inline-flex">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="vertical-align:-3px;margin-right:8px"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>View on GitHub
+              </a>
+            </div>
+          </div>
         </div>
       </div>
 

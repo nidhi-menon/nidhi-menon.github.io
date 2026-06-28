@@ -65,4 +65,13 @@
     // Fallback: show all immediately
     fadeElements.forEach(el => el.classList.add('visible'));
   }
+  // Artifact accordion
+  document.querySelectorAll('.artifact-accordion__trigger').forEach(trigger => {
+    trigger.addEventListener('click', () => {
+      const item = trigger.closest('.artifact-accordion__item');
+      const isOpen = item.classList.contains('open');
+      item.classList.toggle('open', !isOpen);
+      trigger.setAttribute('aria-expanded', String(!isOpen));
+    });
+  });
 })();

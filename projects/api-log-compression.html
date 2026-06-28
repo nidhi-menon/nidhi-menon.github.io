@@ -43,20 +43,41 @@
         <span class="project-badge project-badge--shipped">Shipped</span>
       </div>
       <h1 class="project-detail__title">API Log Compression</h1>
-      <p class="project-detail__tagline">Autodesk — reducing storage costs on high-volume API telemetry</p>
+      <p class="project-detail__tagline">High-performance API log compression framework at Autodesk</p>
 
       <div class="project-detail__section">
-        <h2>About</h2>
-        <p>Designed and shipped a log compression pipeline for high-throughput API telemetry, reducing storage costs by ~60% while preserving full fidelity for anomaly detection and audit queries. The system included a sampling strategy specifically tuned to preserve tail-latency signal that would otherwise be lost under naive compression.</p>
+        <h2>Story Behind the Project</h2>
+        <p>Autodesk products generate a continuous stream of API telemetry through Apigee — raw logs capturing every API call made by customers across Autodesk's product ecosystem. At ~1.4GB per hour, this data was voluminous, but most of it was noise. The real challenge wasn't storage — it was extracting the important signals and making them available at the right granularities for analytics and ML projects downstream.</p>
+        <p style="margin-top:12px">The questions those downstream teams needed to answer were high-stakes: Where is API usage being abused? What does granular customer behavior actually look like? How should Autodesk think about API monetization, product subscriptions, and customer retention? None of that was possible without first transforming the raw firehose into something structured, compressed, and usable.</p>
       </div>
 
       <div class="project-detail__section">
-        <h2>Details</h2>
+        <h2>About</h2>
+        <p>A high-performance data compression framework that processes Apigee API logs generated from customer usage of Autodesk products, compressing ~1.4GB/hr of raw telemetry by 99.8% while extracting and storing the important signals at different granularities of aggregation. The compressed, structured data feeds downstream analytics and ML pipelines for anomaly detection, customer behavior analysis, and strategic business decisions.</p>
+      </div>
+
+      <div class="project-detail__section">
+        <h2>My Role</h2>
+        <p>I was part of the team that built the foundational data engineering framework enabling this pipeline and many others at Autodesk. My contributions spanned the full lifecycle: I researched and evaluated tooling options, bringing back findings that influenced the team's decision to use Airflow DAGs and Fivetran connectors with Snowflake based on our specific use case. I wrote the SQL scripts and Python code for the Airflow DAGs that powered the framework and pipelines.</p>
+        <p style="margin-top:12px">On the product side, I conducted stakeholder interviews to identify which signals mattered downstream — what data needed to be retained and at what granularities — ensuring the compression framework was built around real analytics and ML needs rather than assumptions. As the framework matured, our team templated it to support automated onboarding of additional teams leveraging Apigee for usage tracking, extending its impact across the organization.</p>
+      </div>
+
+      <div class="project-detail__section">
+        <h2>Key Details</h2>
         <ul>
-          <li>~60% reduction in storage costs with no loss of audit or anomaly detection fidelity</li>
-          <li>Tail-latency-preserving sampling strategy to retain high-percentile signal</li>
-          <li>Streaming pipeline via Kafka with Parquet-based cold storage on S3</li>
-          <li>Query layer via Athena enabling ad-hoc analysis without full log reconstruction</li>
+          <li>99.8% compression of Apigee API logs (~1.4GB/hr) with signal fidelity preserved across multiple aggregation granularities</li>
+          <li>Downstream anomaly detection pipeline to identify and reduce API usage abuse</li>
+          <li>Granular customer behavior insights enabling strategic decisions on API monetization, product subscriptions, and customer retention</li>
+          <li>Built using Airflow DAGs, DBT, and Fivetran data connectors</li>
+        </ul>
+      </div>
+
+      <div class="project-detail__section">
+        <h2>Impact</h2>
+        <ul>
+          <li><strong>99.8% reduction</strong> in raw API log volume (~1.4GB/hr compressed to scalable, query-ready signals)</li>
+          <li>Enabled scalable ML pipelines for anomaly detection and granular customer behavior analysis</li>
+          <li>Unlocked data-driven decisions on API monetization, product subscriptions, and customer retention</li>
         </ul>
       </div>
 
@@ -64,10 +85,11 @@
         <h2>Technologies</h2>
         <div class="skills__chips">
           <span class="chip">Python</span>
-          <span class="chip">Apache Kafka</span>
-          <span class="chip">S3</span>
-          <span class="chip">Parquet</span>
-          <span class="chip">Athena</span>
+          <span class="chip">Apigee</span>
+          <span class="chip">Airflow</span>
+          <span class="chip">DBT</span>
+          <span class="chip">Fivetran</span>
+          <span class="chip">Snowflake</span>
         </div>
       </div>
 
