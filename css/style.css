@@ -1343,6 +1343,26 @@ h1, h2, h3, h4 {
   text-decoration: underline;
 }
 
+.writing-block__ig-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin: 24px 0 8px;
+  align-items: start;
+}
+
+.writing-block__ig-grid img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 4px;
+  transition: opacity 0.2s;
+}
+
+.writing-block__ig-grid img:hover {
+  opacity: 0.88;
+}
+
 .project-detail__coming-soon {
   color: var(--text-muted);
   font-style: italic;
