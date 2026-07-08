@@ -663,12 +663,12 @@ h1, h2, h3, h4 {
 
 .btn--outline {
   background: transparent;
-  border: 1.5px solid var(--accent);
-  color: var(--accent);
+  border: 1.5px solid var(--color-accent);
+  color: var(--color-accent);
 }
 
 .btn--outline:hover {
-  background: var(--accent);
+  background: var(--color-accent);
   color: #fff;
 }
 
