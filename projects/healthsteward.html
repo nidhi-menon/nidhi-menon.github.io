@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../css/style.css?v=4">
+  <link rel="stylesheet" href="../css/style.css?v=6">
 </head>
 <body>
 
@@ -106,7 +106,43 @@
 
       <div class="project-detail__section">
         <h2>Artifacts</h2>
-        <p class="project-detail__coming-soon">Additional artifacts coming soon.</p>
+        <p>For a deeper look at the architecture, see the <a href="https://nidhi-menon.github.io/HealthSteward/tdd.html#system-design" target="_blank" rel="noopener">System Design</a> section of the <a href="https://nidhi-menon.github.io/HealthSteward/tdd.html" target="_blank" rel="noopener">technical design doc</a> — covering data flow, trust boundaries, the agentic fallback logic, and the PII anonymization pipeline.</p>
+        <div class="artifact-accordion">
+          <div class="artifact-accordion__item">
+            <button class="artifact-accordion__trigger" aria-expanded="false">
+              Screenshots
+              <svg class="artifact-accordion__chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div class="artifact-accordion__body">
+              <div class="artifact-accordion">
+                <div class="artifact-accordion__item">
+                  <button class="artifact-accordion__trigger" aria-expanded="false">
+                    Visit Prep
+                    <svg class="artifact-accordion__chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+                  </button>
+                  <div class="artifact-accordion__body">
+                    <figure>
+                      <img src="https://raw.githubusercontent.com/nidhi-menon/HealthSteward/main/docs/assets/visit-prep-questions.png" alt="HealthSteward visit prep page showing an AI-generated health context summary and categorized questions to ask a doctor">
+                      <figcaption>AI-generated visit prep — health context summary and categorized questions ahead of an appointment. (Synthetic demo data.)</figcaption>
+                    </figure>
+                  </div>
+                </div>
+                <div class="artifact-accordion__item">
+                  <button class="artifact-accordion__trigger" aria-expanded="false">
+                    Needs Attention Overview
+                    <svg class="artifact-accordion__chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+                  </button>
+                  <div class="artifact-accordion__body">
+                    <figure>
+                      <img src="https://raw.githubusercontent.com/nidhi-menon/HealthSteward/main/docs/assets/overview-needs-attention.png" alt="HealthSteward overview tab showing the Needs Attention panel with pending follow-ups, lab orders, and referrals">
+                      <figcaption>Needs Attention overview — pending follow-ups, lab orders, and referrals in one place. (Synthetic demo data.)</figcaption>
+                    </figure>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
     </div>
