@@ -1436,7 +1436,7 @@ h1, h2, h3, h4 {
   transition: transform 0.2s ease;
 }
 
-.artifact-accordion__item.open .artifact-accordion__chevron {
+.artifact-accordion__item.open > .artifact-accordion__trigger .artifact-accordion__chevron {
   transform: rotate(180deg);
 }
 
@@ -1445,7 +1445,7 @@ h1, h2, h3, h4 {
   padding: 0 16px 16px;
 }
 
-.artifact-accordion__item.open .artifact-accordion__body {
+.artifact-accordion__item.open > .artifact-accordion__body {
   display: block;
 }
 
