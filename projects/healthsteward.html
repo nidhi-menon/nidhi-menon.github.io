@@ -65,7 +65,7 @@
       <div class="project-detail__section">
         <h2>Key Features</h2>
         <ul>
-          <li>AI-powered visit prep that generates personalized questions for upcoming appointments based on recent records and history</li>
+          <li>AI-powered visit prep via an agentic tool-use loop — runs fully local on Ollama by default, with Claude API or any OpenAI-compatible provider as opt-ins; falls back to single-shot generation if the loop doesn't converge</li>
           <li>Local PDF parsing of after-visit summaries via Ollama with qwen2.5:7b, using targeted LLM calls only for unstructured sections — no cloud required</li>
           <li>PII anonymization layer for external LLM calls, combining deterministic field replacement, regex, and NER-based detection — no LLM involved in the anonymization itself</li>
           <li>Multi-provider record consolidation with condition and medication tracking</li>
