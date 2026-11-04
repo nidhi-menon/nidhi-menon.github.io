@@ -2,8 +2,22 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Experience — Nidhi Menon</title>
-  <meta name="description" content="Work experience, research, education, and skills of Nidhi Menon — ML Engineer with 7+ years building production ML systems.">
+  <title>Experience | Nidhi Menon, Founder of HealthSteward</title>
+  <meta name="description" content="Experience of Nidhi Menon: founder of HealthSteward, Visiting Scientist at The Jackson Laboratory, independent researcher, and former Principal ML Engineer at Autodesk.">
+  <link rel="canonical" href="https://nidhi-menon.github.io/experience.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Nidhi Menon">
+  <meta property="og:url" content="https://nidhi-menon.github.io/experience.html">
+  <meta property="og:title" content="Experience | Nidhi Menon, Founder of HealthSteward">
+  <meta property="og:description" content="Experience of Nidhi Menon: founder of HealthSteward, Visiting Scientist at The Jackson Laboratory, independent researcher, and former Principal ML Engineer at Autodesk.">
+  <meta property="og:image" content="https://nidhi-menon.github.io/images/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Nidhi Menon, Founder of HealthSteward">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Experience | Nidhi Menon, Founder of HealthSteward">
+  <meta name="twitter:description" content="Experience of Nidhi Menon: founder of HealthSteward, Visiting Scientist at The Jackson Laboratory, independent researcher, and former Principal ML Engineer at Autodesk.">
+  <meta name="twitter:image" content="https://nidhi-menon.github.io/images/og-image.png">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="icon" type="image/png" href="favicon.png">
@@ -11,7 +25,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css?v=6">
+  <link rel="stylesheet" href="css/style.css?v=23">
 </head>
 <body>
 
@@ -25,6 +39,7 @@
         <li><a href="about.html">About</a></li>
         <li><a href="experience.html" class="active">Experience</a></li>
         <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="publications.html">Publications</a></li>
         <li><a href="beyond-code.html">Beyond Code</a></li>
         <li><a href="github-stats.html">GitHub Stats</a></li>
       </ul>
@@ -38,7 +53,41 @@
       <div class="container">
         <h2 class="section__title fade-in">Experience</h2>
 
-        <h3 class="timeline__category fade-in">Work Experience</h3>
+        <nav class="exp-jump fade-in" aria-label="Jump to section">
+          <a href="#founder">Founder</a>
+          <a href="#research">Research</a>
+          <a href="#industry">Industry</a>
+          <a href="#education">Education</a>
+          <a href="#skills">Skills</a>
+        </nav>
+
+        <h3 id="founder" class="timeline__category fade-in">Founder</h3>
+        <div class="timeline">
+
+          <div class="timeline__group fade-in">
+            <div class="timeline__group-header">
+              <h4 class="timeline__group-company">HealthSteward</h4>
+              <p class="timeline__group-meta">Sunnyvale, CA &middot; Dec 2025 &ndash; Present</p>
+            </div>
+            <div class="timeline__group-roles">
+              <div class="timeline__item">
+                <div class="timeline__marker"></div>
+                <div class="timeline__content">
+                  <h4>Founder</h4>
+                  <ul class="timeline__list">
+                    <li>Founded HealthSteward, an AI care coordinator for patients managing complex or chronic conditions across multiple providers</li>
+                    <li>Released the open-source v1 in August 2026 (latest: v1.0.1), which processes after-visit summaries, organizes records and action items, and generates personalized visit preparation through an agentic tool-use loop</li>
+                    <li>Authored a paper on the local-first agentic architecture, under review at the IEEE Journal of Biomedical and Health Informatics</li>
+                    <li>Building the consumer app; waitlist open at <a href="https://healthstewardai.com/#waitlist" target="_blank" rel="noopener">healthstewardai.com</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <h3 id="research" class="timeline__category fade-in">Research Experience</h3>
         <div class="timeline">
 
           <div class="timeline__group fade-in">
@@ -50,7 +99,7 @@
               <div class="timeline__item">
                 <div class="timeline__marker"></div>
                 <div class="timeline__content">
-                  <h4>ML Research Scientist, EndoRISE Program</h4>
+                  <h4>Visiting Scientist, EndoRISE Program (ML Research)</h4>
                   <ul class="timeline__list">
                     <li>Applying ML expertise to women's health research using de-identified endometriosis patient data in collaboration with the Courtois Single Cell Biology Lab, focusing on patient stratification and correlation between surgical inflammation markers and immune comorbidities using clustering and association analysis on EPHect-standardized clinical data</li>
                   </ul>
@@ -58,6 +107,81 @@
               </div>
             </div>
           </div>
+
+          <div class="timeline__group fade-in">
+            <div class="timeline__group-header">
+              <h4 class="timeline__group-company">Independent Research</h4>
+              <p class="timeline__group-meta">Sunnyvale, CA &middot; Jan 2026 &ndash; Present</p>
+            </div>
+            <div class="timeline__group-roles">
+              <div class="timeline__item">
+                <div class="timeline__marker"></div>
+                <div class="timeline__content">
+                  <h4>Independent Researcher</h4>
+                  <ul class="timeline__list">
+                    <li>Position paper: <a href="https://openreview.net/forum?id=dWtU6xUE5w" target="_blank" rel="noopener">The ML Community Must Operationalize and Evaluate Matrescence as a Construct in Its Own Right</a> &middot; ML4H 2026 Findings (accepted)
+                      <ul>
+                        <li>Argues that ML label schemas reduce maternal mental health to depression versus healthy, and that the ML community should operationalize matrescence through construct-aware, lived-experience-informed datasets instead of waiting for clinical infrastructure</li>
+                      </ul>
+                    </li>
+                    <li>Paper: HealthSteward: A Local-First Agentic Architecture for Patient-Side Care Coordination &middot; IEEE Journal of Biomedical and Health Informatics (under review)
+                      <ul>
+                        <li>Proposes four design principles for patient-side agentic care coordination, instantiates them in the open-source HealthSteward system, and evaluates PHI redaction, after-visit-summary parsing, disengagement detection, and visit-preparation groundedness</li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline__group fade-in">
+            <div class="timeline__group-header">
+              <h4 class="timeline__group-company">Georgia Institute of Technology</h4>
+              <p class="timeline__group-meta">Atlanta, GA &middot; Jan &ndash; Dec 2018</p>
+            </div>
+            <div class="timeline__group-roles">
+              <div class="timeline__item">
+                <div class="timeline__marker"></div>
+                <div class="timeline__content">
+                  <h4>Graduate Student Researcher</h4>
+                  <p class="timeline__meta">Advisor: Dr. Dobromir Rahnev</p>
+                  <ul class="timeline__list">
+                    <li>Facilitated interdisciplinary AI/neuroscience comparative study research by designing hybrid image classification tasks for models and human responders</li>
+                    <li>Optimized deep CNN architectures (VGG-16/19, ResNet50, InceptionResNetV2) for hybrid image classification, achieving 94% accuracy through systematic hyperparameter tuning</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline__group fade-in">
+            <div class="timeline__group-header">
+              <h4 class="timeline__group-company">University of Mumbai</h4>
+              <p class="timeline__group-meta">Mumbai, India &middot; Jul 2016 &ndash; May 2017</p>
+            </div>
+            <div class="timeline__group-roles">
+              <div class="timeline__item">
+                <div class="timeline__marker"></div>
+                <div class="timeline__content">
+                  <h4>Undergraduate Researcher</h4>
+                  <p class="timeline__meta">Advisor: Prof. Varunakshi Bhojane</p>
+                  <ul class="timeline__list">
+                    <li>Publication: <a href="https://www.ijirset.com/upload/2017/april/188_Floor.pdf" target="_blank" rel="noopener">Floor Layout Planning using Artificial Intelligence Technique</a> &middot; IJIRSET, Vol. 6, Issue 4, April 2017
+                      <ul>
+                        <li>Prototyped Genetic Algorithm software for furniture placement optimization, achieving 90% accuracy in space utilization by processing 20,000 positional chromosome configurations across 5 generations</li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <h3 id="industry" class="timeline__category fade-in">Industry Experience</h3>
+        <div class="timeline">
 
           <div class="timeline__group fade-in">
             <div class="timeline__group-header">
@@ -185,52 +309,7 @@
 
         </div>
 
-        <h3 class="timeline__category fade-in">Research Experience</h3>
-        <div class="timeline">
-
-          <div class="timeline__group fade-in">
-            <div class="timeline__group-header">
-              <h4 class="timeline__group-company">Georgia Institute of Technology</h4>
-              <p class="timeline__group-meta">Atlanta, GA &middot; Jan &ndash; Dec 2018</p>
-            </div>
-            <div class="timeline__group-roles">
-              <div class="timeline__item">
-                <div class="timeline__marker"></div>
-                <div class="timeline__content">
-                  <h4>Graduate Student Researcher</h4>
-                  <p class="timeline__meta">Advisor: Dr. Dobromir Rahnev</p>
-                  <ul class="timeline__list">
-                    <li>Facilitated interdisciplinary AI/neuroscience comparative study research by designing hybrid image classification tasks for models and human responders</li>
-                    <li>Optimized deep CNN architectures (VGG-16/19, ResNet50, InceptionResNetV2) for hybrid image classification, achieving 94% accuracy through systematic hyperparameter tuning</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="timeline__group fade-in">
-            <div class="timeline__group-header">
-              <h4 class="timeline__group-company">University of Mumbai</h4>
-              <p class="timeline__group-meta">Mumbai, India &middot; Jul 2016 &ndash; May 2017</p>
-            </div>
-            <div class="timeline__group-roles">
-              <div class="timeline__item">
-                <div class="timeline__marker"></div>
-                <div class="timeline__content">
-                  <h4>Undergraduate Researcher</h4>
-                  <p class="timeline__meta">Advisor: Prof. Varunakshi Bhojane</p>
-                  <ul class="timeline__list">
-                    <li>Publication: <a href="https://www.ijirset.com/upload/2017/april/188_Floor.pdf" target="_blank" rel="noopener"><strong>Floor Layout Planning using Artificial Intelligence Technique</strong></a> &middot; IJIRSET, Vol. 6, Issue 4, April 2017</li>
-                    <li>Prototyped Genetic Algorithm software for furniture placement optimization, achieving 90% accuracy in space utilization by processing 20,000 positional chromosome configurations across 5 generations</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-        <h3 class="timeline__category fade-in">Education</h3>
+        <h3 id="education" class="timeline__category fade-in">Education</h3>
         <div class="timeline">
 
           <div class="timeline__item fade-in">

@@ -2,13 +2,28 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>HealthSteward — Nidhi Menon</title>
+  <title>HealthSteward: AI care coordinator | Nidhi Menon</title>
+  <meta name="description" content="HealthSteward is an AI care coordinator for patients navigating fragmented healthcare. Open-source v1 released August 2026; consumer app in development. Founded by Nidhi Menon.">
+  <link rel="canonical" href="https://nidhi-menon.github.io/projects/healthsteward.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Nidhi Menon">
+  <meta property="og:url" content="https://nidhi-menon.github.io/projects/healthsteward.html">
+  <meta property="og:title" content="HealthSteward: AI care coordinator | Nidhi Menon">
+  <meta property="og:description" content="HealthSteward is an AI care coordinator for patients navigating fragmented healthcare. Open-source v1 released August 2026; consumer app in development. Founded by Nidhi Menon.">
+  <meta property="og:image" content="https://nidhi-menon.github.io/images/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Nidhi Menon, Founder of HealthSteward">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="HealthSteward: AI care coordinator | Nidhi Menon">
+  <meta name="twitter:description" content="HealthSteward is an AI care coordinator for patients navigating fragmented healthcare. Open-source v1 released August 2026; consumer app in development. Founded by Nidhi Menon.">
+  <meta name="twitter:image" content="https://nidhi-menon.github.io/images/og-image.png">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="../favicon.ico">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../css/style.css?v=6">
+  <link rel="stylesheet" href="../css/style.css?v=23">
 </head>
 <body>
 
@@ -22,6 +37,7 @@
         <li><a href="../about.html">About</a></li>
         <li><a href="../experience.html">Experience</a></li>
         <li><a href="../portfolio.html" class="active">Portfolio</a></li>
+        <li><a href="../publications.html">Publications</a></li>
         <li><a href="../beyond-code.html">Beyond Code</a></li>
         <li><a href="../github-stats.html">GitHub Stats</a></li>
       </ul>
@@ -40,108 +56,108 @@
         <img src="../images/projects/healthsteward.png" alt="HealthSteward">
       </div>
 
-      <div class="project-detail__badge">
-        <span class="project-badge project-badge--in-progress">In Progress</span>
-      </div>
       <h1 class="project-detail__title">HealthSteward</h1>
-      <p class="project-detail__tagline">Privacy-first agentic AI health coordination system</p>
+      <p class="project-detail__tagline">AI care coordinator for patients navigating fragmented healthcare</p>
+
+      <div class="hs-status">
+        <div class="hs-status__card hs-status__card--live">
+          <span class="hs-pill hs-pill--live">Available</span>
+          <h3>Open-Source v1</h3>
+          <p>Released August 2026 (v1.0.1)</p>
+        </div>
+        <div class="hs-status__card hs-status__card--soon">
+          <span class="hs-pill hs-pill--soon">In development</span>
+          <h3>Consumer App</h3>
+          <p>Waitlist open</p>
+        </div>
+      </div>
 
       <div class="project-detail__section">
         <h2>Story Behind the Project</h2>
         <p>Managing a chronic illness isn't just a medical challenge — it's a logistics one. I live with endometriosis, PCOS, adenomyosis, and several immune comorbidities, which means coordinating care across multiple specialists, tracking records from different systems, and walking into appointments without losing the thread of what was discussed three visits ago. Every tool I tried either ignored privacy, reduced my health to a checklist, or made me do the heavy lifting of connecting the dots myself.</p>
-        <p style="margin-top:12px">I started building HealthSteward because nothing else existed that took both patient privacy and care complexity seriously at the same time.</p>
+        <p style="margin-top:12px">I founded HealthSteward because nothing else existed that took both patient privacy and care complexity seriously at the same time.</p>
       </div>
 
       <div class="project-detail__section">
         <h2>About</h2>
-        <p>HealthSteward is a personal health coordination system that consolidates fragmented medical records across providers and conditions. It uses a local-first architecture — all sensitive processing stays on-device, and no health data is transmitted to external services unless explicitly anonymized first. The system is built to handle the kind of multi-condition, multi-provider complexity that most health tools aren't designed for.</p>
+        <p>HealthSteward is an AI care coordinator for patients navigating fragmented healthcare (e.g. patients managing complex or chronic conditions across multiple providers). It currently exists in two forms: an open-source v1 that is available today, and a consumer app that is still in development.</p>
       </div>
 
       <div class="project-detail__section">
         <h2>My Role</h2>
-        <p>Sole designer and developer, built in collaboration with Claude Code. This is a personal project — I defined the problem, designed the architecture, and built the full stack end to end, from the FastAPI backend and local LLM integration to the React frontend and PII anonymization pipeline.</p>
+        <p>Founder, designer, and developer. I defined the problem, designed the architecture, and built the full stack end to end, from the FastAPI backend and local LLM integration to the React frontend and PII redaction pipeline, in collaboration with Claude Code.</p>
       </div>
-
-      <div class="project-detail__section">
-        <h2>Key Features</h2>
-        <ul>
-          <li>AI-powered visit prep via an agentic tool-use loop — runs fully local on Ollama by default, with Claude API or any OpenAI-compatible provider as opt-ins; falls back to single-shot generation if the loop doesn't converge</li>
-          <li>Local PDF parsing of after-visit summaries via Ollama with qwen2.5:7b, using targeted LLM calls only for unstructured sections — no cloud required</li>
-          <li>PII anonymization layer for external LLM calls, combining deterministic field replacement, regex, and NER-based detection — no LLM involved in the anonymization itself</li>
-          <li>Multi-provider record consolidation with condition and medication tracking</li>
-        </ul>
-      </div>
-
-      <div class="project-detail__section">
-        <h2>Impact</h2>
-        <p>Still in active development — impact section coming once the core system is stable and in daily use.</p>
-      </div>
-
-      <div class="project-detail__section">
-        <h2>Technologies</h2>
-        <div class="skills__chips">
-          <span class="chip">FastAPI</span>
-          <span class="chip">SQLAlchemy</span>
-          <span class="chip">SQLite</span>
-          <span class="chip">React 19</span>
-          <span class="chip">TypeScript</span>
-          <span class="chip">Tailwind CSS</span>
-          <span class="chip">Claude API</span>
-          <span class="chip">Ollama</span>
+      <div class="hs-panel hs-panel--live">
+        <div class="hs-panel__head">
+          <span class="hs-pill hs-pill--live">Available</span>
+          <h2 class="hs-panel__title">Open-Source v1</h2>
         </div>
-      </div>
+        <p class="hs-panel__note">Everything in this panel describes the open-source v1, not the consumer app.</p>
+        <p>Released in August 2026 under GPLv3 (latest: v1.0.1). It consolidates fragmented records, processes after-visit summaries, tracks action items, and generates personalized visit preparation. It uses a local-first architecture: sensitive processing stays on-device by default, and external model calls are opt-in and happen only after redaction.</p>
 
-      <div class="project-detail__section">
-        <h2>Links</h2>
+        <div class="project-detail__section">
+          <h2>Key Features</h2>
+          <ul>
+            <li>AI-powered visit prep via an agentic tool-use loop &mdash; runs fully local on Ollama by default, with Claude API or any OpenAI-compatible provider as opt-ins; falls back to single-shot generation if the loop doesn't converge</li>
+            <li>Local PDF parsing of after-visit summaries via Ollama with qwen2.5:7b, using targeted LLM calls only for unstructured sections &mdash; no cloud required</li>
+            <li>PHI redaction before any external model call: deterministic field replacement for structured fields and a rule-based pipeline for free text, with no LLM involved; shipped regex-only for bounded, auditable behavior</li>
+            <li>Multi-provider record consolidation with condition and medication tracking</li>
+            <li>Needs Attention panel: four automated nudge types (visit prep missing, no after-visit summary uploaded, past-due appointments, adverse vital-sign trends) that surface gaps in care without the patient having to ask</li>
+            <li>Deterministic post-generation guardrail that strips unsupported claims from visit-prep output, reducing the judge-estimated unsupported-claim rate from 21.6% to 1.1% on the development set</li>
+          </ul>
+        </div>
+
+        <div class="project-detail__section">
+          <h2>Evaluation</h2>
+          <ul>
+            <li>Paper describing the architecture, &ldquo;HealthSteward: A Local-First Agentic Architecture for Patient-Side Care Coordination,&rdquo; is under review at the IEEE Journal of Biomedical and Health Informatics</li>
+            <li>Evaluated on synthetic fixtures and three real after-visit summaries: 100% redaction precision (74&ndash;94% recall, 187 cases), exact structured-field extraction across all evaluated documents, and a 4.5% mean LLM-judge-estimated unsupported-claim rate on a 30-case, 15-specialty set</li>
+            <li>Local visit preparation in a mean of 16.3 seconds on consumer hardware (Apple M3, 8 GB RAM)</li>
+            <li>Independent pilot review of 30 outputs by nine reviewers; 153-test regression suite</li>
+          </ul>
+          <p class="hs-panel__note">Proof of concept: not yet clinically validated or tested with real patients.</p>
+        </div>
+
+        <div class="project-detail__section">
+          <h2>Technologies</h2>
+          <div class="skills__chips">
+            <span class="chip">FastAPI</span>
+            <span class="chip">SQLAlchemy</span>
+            <span class="chip">SQLite</span>
+            <span class="chip">React 19</span>
+            <span class="chip">TypeScript</span>
+            <span class="chip">Tailwind CSS</span>
+            <span class="chip">Claude API</span>
+            <span class="chip">Ollama</span>
+          </div>
+        </div>
+
         <div class="project-detail__links">
-          <a href="https://nidhi-menon.github.io/HealthSteward/" class="btn" target="_blank" rel="noopener">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align:-3px;margin-right:8px"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14L21 3"/></svg>Project Site
-          </a>
           <a href="https://github.com/nidhi-menon/HealthSteward" class="btn" target="_blank" rel="noopener">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="vertical-align:-3px;margin-right:8px"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>GitHub (GPLv3)
           </a>
+          <a href="https://healthstewardai.com/open-source.html" class="btn btn--outline" target="_blank" rel="noopener">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-3px;margin-right:8px"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>Open-Source Page
+          </a>
         </div>
-        <p style="margin-top:12px">Open to collaboration and contributions — licensed under GPLv3.</p>
       </div>
 
-      <div class="project-detail__section">
-        <h2>Artifacts</h2>
-        <p>For a deeper look at the architecture, see the <a href="https://nidhi-menon.github.io/HealthSteward/tdd.html#system-design" target="_blank" rel="noopener">System Design</a> section of the <a href="https://nidhi-menon.github.io/HealthSteward/tdd.html" target="_blank" rel="noopener">technical design doc</a> — covering data flow, trust boundaries, the agentic fallback logic, and the PII anonymization pipeline.</p>
-        <div class="artifact-accordion">
-          <div class="artifact-accordion__item">
-            <button class="artifact-accordion__trigger" aria-expanded="false">
-              Screenshots
-              <svg class="artifact-accordion__chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
-            </button>
-            <div class="artifact-accordion__body">
-              <div class="artifact-accordion">
-                <div class="artifact-accordion__item">
-                  <button class="artifact-accordion__trigger" aria-expanded="false">
-                    Visit Prep
-                    <svg class="artifact-accordion__chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
-                  </button>
-                  <div class="artifact-accordion__body">
-                    <figure>
-                      <img src="https://raw.githubusercontent.com/nidhi-menon/HealthSteward/main/docs/assets/visit-prep-questions.png" alt="HealthSteward visit prep page showing an AI-generated health context summary and categorized questions to ask a doctor">
-                      <figcaption>AI-generated visit prep — health context summary and categorized questions ahead of an appointment. (Synthetic demo data.)</figcaption>
-                    </figure>
-                  </div>
-                </div>
-                <div class="artifact-accordion__item">
-                  <button class="artifact-accordion__trigger" aria-expanded="false">
-                    Needs Attention Overview
-                    <svg class="artifact-accordion__chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
-                  </button>
-                  <div class="artifact-accordion__body">
-                    <figure>
-                      <img src="https://raw.githubusercontent.com/nidhi-menon/HealthSteward/main/docs/assets/overview-needs-attention.png" alt="HealthSteward overview tab showing the Needs Attention panel with pending follow-ups, lab orders, and referrals">
-                      <figcaption>Needs Attention overview — pending follow-ups, lab orders, and referrals in one place. (Synthetic demo data.)</figcaption>
-                    </figure>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+      <div class="hs-panel hs-panel--soon">
+        <div class="hs-panel__head">
+          <span class="hs-pill hs-pill--soon">In development</span>
+          <h2 class="hs-panel__title">Consumer App</h2>
+        </div>
+        <p>A consumer app is in development, and the waitlist is open. I'm also looking to connect with collaborators, clinicians, and investors; <a href="mailto:contact@healthstewardai.com">get in touch</a>.</p>
+        <div class="project-detail__links">
+          <a href="https://healthstewardai.com/#waitlist" class="btn" target="_blank" rel="noopener">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-3px;margin-right:8px"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><line x1="19" y1="8" x2="19" y2="14"/><line x1="22" y1="11" x2="16" y2="11"/></svg>Join the Waitlist
+          </a>
+          <a href="https://healthstewardai.com" class="btn btn--outline" target="_blank" rel="noopener">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-3px;margin-right:8px"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>Company Website
+          </a>
+          <a href="https://www.linkedin.com/company/healthsteward-ai/" class="btn btn--outline" target="_blank" rel="noopener">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="vertical-align:-3px;margin-right:8px"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>LinkedIn
+          </a>
         </div>
       </div>
 
