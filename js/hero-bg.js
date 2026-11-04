@@ -106,11 +106,13 @@
 
   // --- Typed role animation ---
   const roles = [
+    'Founder, HealthSteward',
     'Machine Learning Engineer',
-    'Search & Recommendations',
-    'NLP & GenAI',
-    'Technical Leadership',
+    'Healthcare AI Researcher',
+    'Technical Leader',
   ];
+  // Hold the first role (the founder line) longer than the rest
+  const HOLD_FIRST_ROLE = 4500;
 
   const typedEl = document.getElementById('typed-role');
   let roleIndex = 0;
@@ -131,7 +133,7 @@
 
       if (charIndex === current.length) {
         isDeleting = true;
-        setTimeout(typeRole, PAUSE_AFTER_TYPE);
+        setTimeout(typeRole, roleIndex === 0 ? HOLD_FIRST_ROLE : PAUSE_AFTER_TYPE);
         return;
       }
       setTimeout(typeRole, TYPE_SPEED);
