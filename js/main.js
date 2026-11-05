@@ -7,7 +7,8 @@
 
   toggle.addEventListener('click', () => {
     toggle.classList.toggle('open');
-    navLinks.classList.toggle('open');
+    const isOpen = navLinks.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', String(isOpen));
   });
 
   // Close mobile nav on link click
@@ -15,6 +16,7 @@
     link.addEventListener('click', () => {
       toggle.classList.remove('open');
       navLinks.classList.remove('open');
+      toggle.setAttribute('aria-expanded', 'false');
     });
   });
 

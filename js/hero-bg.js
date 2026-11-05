@@ -98,11 +98,20 @@
       cancelAnimationFrame(animationId);
       init();
       draw();
+      if (reduceMotion) cancelAnimationFrame(animationId);
     }, 200);
   });
 
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
   init();
-  draw();
+  if (reduceMotion) {
+    // Draw one static frame instead of animating
+    draw();
+    cancelAnimationFrame(animationId);
+  } else {
+    draw();
+  }
 
   // --- Typed role animation ---
   const roles = [
@@ -151,5 +160,9 @@
     }
   }
 
-  typeRole();
+  if (reduceMotion) {
+    typedEl.textContent = roles[0];
+  } else {
+    typeRole();
+  }
 })();

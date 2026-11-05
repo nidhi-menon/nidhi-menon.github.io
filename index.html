@@ -25,16 +25,17 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css?v=23">
+  <link rel="stylesheet" href="css/style.css?v=24">
   <meta name="google-site-verification" content="0G9xMfM_EHG8sjdHKGdQoLtfVNxn9DS2TTWynXXxgCE">
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
   <!-- Navigation -->
   <nav class="nav" id="nav">
     <div class="nav__inner">
       <a href="/" class="nav__logo">Nidhi Menon</a>
-      <button class="nav__toggle" id="nav-toggle" aria-label="Toggle navigation">
+      <button class="nav__toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links">
         <span></span><span></span><span></span>
       </button>
       <ul class="nav__links" id="nav-links">
@@ -49,6 +50,7 @@
   </nav>
 
   <!-- Hero -->
+  <main id="main">
   <section class="hero hero--particles" id="hero">
     <canvas id="hero-particles-canvas"></canvas>
     <div class="hero__content">
@@ -74,6 +76,7 @@
       <p class="hero__highlight"><a href="publications.html">Paper accepted at ML4H 2026 (Findings) &middot; Featured in Halle Tecco's 65 Women in Healthcare AI</a></p>
     </div>
   </section>
+  </main>
 
   <!-- Footer -->
   <footer class="footer">

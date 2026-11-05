@@ -11,14 +11,15 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css?v=23">
+  <link rel="stylesheet" href="css/style.css?v=24">
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
   <nav class="nav" id="nav">
     <div class="nav__inner">
       <a href="/" class="nav__logo">Nidhi Menon</a>
-      <button class="nav__toggle" id="nav-toggle" aria-label="Toggle navigation">
+      <button class="nav__toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links">
         <span></span><span></span><span></span>
       </button>
       <ul class="nav__links" id="nav-links">
@@ -32,11 +33,11 @@
     </div>
   </nav>
 
-  <main style="padding-top: var(--nav-height);">
+  <main id="main" style="padding-top: var(--nav-height);">
 
     <section class="section section--alt">
       <div class="container">
-        <h2 class="section__title fade-in">Beyond Code</h2>
+        <h1 class="section__title fade-in">Beyond Code</h1>
         <div class="writing-intro fade-in">
           <p>There has always been more to me than the work. Writing was how I processed what I was living through long before I had the vocabulary to name it — chronic illness, identity, the experience of being a woman in spaces that weren't designed with us in mind. Art has been a constant too: painting, sketching, and making things with my hands as a way of staying grounded when the rest of life gets loud.</p>
           <p style="margin-top:12px">Most of what I wrote under <em>Spiels of a Quill</em> sits at the intersection of the personal and the political — the places where individual experience reveals something larger about how systems work, or don't. <em>BookBites</em> is quieter: short reviews from a lifelong reader who believes books are one of the best ways to understand someone else's world. And <em>The Pigmented Palette</em> is where the visual side lives — paintings, sketches, crochet, whatever I'm making.</p>
