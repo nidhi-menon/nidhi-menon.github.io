@@ -11,14 +11,15 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css?v=23">
+  <link rel="stylesheet" href="css/style.css?v=24">
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
   <nav class="nav" id="nav">
     <div class="nav__inner">
       <a href="/" class="nav__logo">Nidhi Menon</a>
-      <button class="nav__toggle" id="nav-toggle" aria-label="Toggle navigation">
+      <button class="nav__toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links">
         <span></span><span></span><span></span>
       </button>
       <ul class="nav__links" id="nav-links">
@@ -32,10 +33,10 @@
     </div>
   </nav>
 
-  <main style="padding-top: var(--nav-height);">
+  <main id="main" style="padding-top: var(--nav-height);">
     <section class="section" id="github-stats">
       <div class="container">
-        <h2 class="section__title">GitHub Stats</h2>
+        <h1 class="section__title">GitHub Stats</h1>
         <p class="gs-intro">Open source activity across public repos, updated nightly via the GitHub API. Views and clones are lifetime totals, built from nightly snapshots.</p>
         <a class="btn btn--outline gs-trends-link" href="https://nidhi-menon.github.io/nidhi-gh-stats/portfolio-widget.html" target="_blank" rel="noopener">View longitudinal trends &amp; all repos →</a>
         <div class="gs-kpi-row" id="gs-kpi-row"></div>

@@ -25,14 +25,15 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css?v=23">
+  <link rel="stylesheet" href="css/style.css?v=24">
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
   <nav class="nav" id="nav">
     <div class="nav__inner">
       <a href="/" class="nav__logo">Nidhi Menon</a>
-      <button class="nav__toggle" id="nav-toggle" aria-label="Toggle navigation">
+      <button class="nav__toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links">
         <span></span><span></span><span></span>
       </button>
       <ul class="nav__links" id="nav-links">
@@ -46,7 +47,8 @@
     </div>
   </nav>
 
-  <main style="padding-top: var(--nav-height);">
+  <main id="main" style="padding-top: var(--nav-height);">
+    <h1 class="sr-only">Portfolio</h1>
 
     <!-- Startup -->
     <section class="section section--alt" id="portfolio-startup">
@@ -56,7 +58,7 @@
 
           <a href="projects/healthsteward.html" class="pf-thumb">
             <div class="pf-thumb__img-wrap">
-              <img src="images/projects/healthsteward.png" alt="HealthSteward">
+              <img src="images/projects/healthsteward.webp" alt="HealthSteward">
             </div>
             <div class="pf-thumb__info">
               <span class="project-badge project-badge--open-source">Open-Source v1</span>
@@ -77,7 +79,7 @@
 
           <a href="projects/endorise.html" class="pf-thumb">
             <div class="pf-thumb__img-wrap">
-              <img src="images/projects/endorise.png" alt="EndoRISE">
+              <img src="images/projects/endorise.webp" alt="EndoRISE" loading="lazy">
             </div>
             <div class="pf-thumb__info">
               <span class="project-badge project-badge--in-progress">In Progress</span>
@@ -88,7 +90,7 @@
 
           <a href="projects/hybrid-image-classification.html" class="pf-thumb">
             <div class="pf-thumb__img-wrap">
-              <img src="images/projects/hybrid-imgs.png" alt="Hybrid Image Classification">
+              <img src="images/projects/hybrid-imgs.webp" alt="Hybrid Image Classification" loading="lazy">
             </div>
             <div class="pf-thumb__info">
               <span class="project-badge project-badge--completed">Completed</span>
@@ -99,7 +101,7 @@
 
           <a href="projects/floor-layout-optimization.html" class="pf-thumb">
             <div class="pf-thumb__img-wrap">
-              <img src="images/projects/peranoto.png" alt="PeraNoto">
+              <img src="images/projects/peranoto.webp" alt="PeraNoto" loading="lazy">
             </div>
             <div class="pf-thumb__info">
               <span class="project-badge project-badge--completed">Completed</span>
@@ -120,7 +122,7 @@
 
           <a href="projects/app-store-recommendation.html" class="pf-thumb">
             <div class="pf-thumb__img-wrap">
-              <img src="images/projects/adsk-appstore.png" alt="Autodesk App Store Recommendation System">
+              <img src="images/projects/adsk-appstore.webp" alt="Autodesk App Store Recommendation System" loading="lazy">
             </div>
             <div class="pf-thumb__info">
               <span class="project-badge project-badge--shipped">Shipped</span>
@@ -131,7 +133,7 @@
 
           <a href="projects/voc-analytics.html" class="pf-thumb">
             <div class="pf-thumb__img-wrap">
-              <img src="images/projects/csi.png" alt="Support Insights Platform">
+              <img src="images/projects/csi.webp" alt="Support Insights Platform" loading="lazy">
             </div>
             <div class="pf-thumb__info">
               <span class="project-badge project-badge--shipped">Shipped</span>
@@ -142,7 +144,7 @@
 
           <a href="projects/api-log-compression.html" class="pf-thumb">
             <div class="pf-thumb__img-wrap">
-              <img src="images/projects/logs-compression.png" alt="API Log Compression">
+              <img src="images/projects/logs-compression.webp" alt="API Log Compression" loading="lazy">
             </div>
             <div class="pf-thumb__info">
               <span class="project-badge project-badge--shipped">Shipped</span>

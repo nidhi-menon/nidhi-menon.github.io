@@ -8,14 +8,15 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../css/style.css?v=23">
+  <link rel="stylesheet" href="../css/style.css?v=24">
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
   <nav class="nav" id="nav">
     <div class="nav__inner">
       <a href="/" class="nav__logo">Nidhi Menon</a>
-      <button class="nav__toggle" id="nav-toggle" aria-label="Toggle navigation">
+      <button class="nav__toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links">
         <span></span><span></span><span></span>
       </button>
       <ul class="nav__links" id="nav-links">
@@ -29,7 +30,7 @@
     </div>
   </nav>
 
-  <main style="padding-top: var(--nav-height);">
+  <main id="main" style="padding-top: var(--nav-height);">
     <div class="project-detail">
 
       <a href="../portfolio.html" class="project-detail__back">
@@ -38,7 +39,7 @@
       </a>
 
       <div class="project-detail__hero">
-        <img src="../images/projects/adsk-appstore.png" alt="Autodesk App Store Recommendation System">
+        <img src="../images/projects/adsk-appstore.webp" alt="Autodesk App Store Recommendation System">
       </div>
 
       <div class="project-detail__badge">
@@ -113,7 +114,7 @@
             </button>
             <div class="artifact-accordion__body">
               <figure>
-                <img src="../images/artifacts/app-store-recommendation/workshop.png" alt="Card game used during Autodesk University user research workshops">
+                <img src="../images/artifacts/app-store-recommendation/workshop.png" alt="Card game used during Autodesk University user research workshops" loading="lazy">
                 <figcaption>Participants arranged up to 8 cards across four categories — Recommendation Method, Data Collection & Privacy, Desired Qualities, and more — to define their ideal personalized recommendation engine.</figcaption>
               </figure>
             </div>
